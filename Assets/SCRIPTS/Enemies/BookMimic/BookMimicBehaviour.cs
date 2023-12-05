@@ -62,14 +62,23 @@ public class BookMimicBehaviour : EnemyBehaviour
         {
             elapsedStep = 0f;
             agent.CalculatePath(playerRef.transform.position, path);
-        } 
-
-        Vector3 movementDiretion = path.corners[1] - transform.position;
+        }
+        int id;
+        try
+        {
+            id = 1;
+        }
+        catch (System.IndexOutOfRangeException)
+        {
+            Debug.Log("Couldnt find second corner, corners length:" + path.corners.Length.ToString());
+            id = 0;
+        }
+        Vector3 movementDiretion = path.corners[id] - transform.position;
         movementDiretion.y = transform.position.y;
         Vector3 newDirection = Vector3.RotateTowards(transform.forward, movementDiretion, singleStep * Time.deltaTime, maxMagnituteDelta);
         transform.rotation = Quaternion.LookRotation(newDirection);
 
-        if (agent.remainingDistance < agent.stoppingDistance && Vector3.Angle(transform.forward, playerRef.transform.position - transform.position) < acceptableAngle)
+        if (Vector3.Distance(transform.position, playerRef.transform.position) < agent.stoppingDistance && Vector3.Angle(transform.forward, playerRef.transform.position - transform.position) < acceptableAngle)
         {
             m_state = MimicState.Attacking;
             _myAnimator.SetTrigger("Attack");

@@ -1,0 +1,114 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4721385450972831529
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4721385450972831509}
+  - component: {fileID: 4721385450972831528}
+  - component: {fileID: 3812572638793565018}
+  m_Layer: 0
+  m_Name: MinigameAv12FMODArray_Trigger
+  m_TagString: Hazard
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4721385450972831509
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4721385450972831529}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.66, y: 0.743, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &4721385450972831528
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4721385450972831529}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3812572638793565018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4721385450972831529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c667e7675e0d3a4479fabe14c3a37ea1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _happensOnce: 0
+  sounds:
+    soundNames:
+    - 
+    - "Tr\xE1s"
+    - Frente
+    - Direita
+    - Esquerda
+    sounds:
+    - Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
+    - Guid:
+        Data1: 1566880631
+        Data2: 1268861423
+        Data3: 1444914619
+        Data4: -1050610407
+      Path: event:/ADVENTURES/AV01/DIALOGUE/Ajudante da Academia/06 abra o portao
+        atras
+    - Guid:
+        Data1: 1909137210
+        Data2: 1121865722
+        Data3: -713364836
+        Data4: 1171979553
+      Path: event:/ADVENTURES/AV01/DIALOGUE/Ajudante da Academia/09 abra o portao
+        a frente
+    - Guid:
+        Data1: 1664124931
+        Data2: 1314039618
+        Data3: 1198657176
+        Data4: 1723987051
+      Path: event:/ADVENTURES/AV01/DIALOGUE/Ajudante da Academia/07 abra o portao
+        da direita
+    - Guid:
+        Data1: 1408896081
+        Data2: 1295370763
+        Data3: -459302528
+        Data4: 1137183524
+      Path: event:/ADVENTURES/AV01/DIALOGUE/Ajudante da Academia/08 abra o portao
+        a esquerda
+  nameToAdd: 
+  soundToAdd:
+    Guid:
+      Data1: 1563856065
+      Data2: 1222846952
+      Data3: 1845528978
+      Data4: 540896309
+    Path: event:/GENERAL/NARRATION/QuestRobot/QR_Direction 4
+  _myManager: {fileID: 0}
+  _hasText: 1
+  tempText: "Abra o port\xE3o da"
+  tempTextTime: 2

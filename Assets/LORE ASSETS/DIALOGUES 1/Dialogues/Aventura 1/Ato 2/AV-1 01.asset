@@ -1,0 +1,141 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4f90f31262b514449f837a928b248c8, type: 3}
+  m_Name: AV-1 01
+  m_EditorClassIdentifier: 
+  dialogue:
+  - PortraitLeft: {fileID: 21300000, guid: 8d9b70b5aa59648449b31d39617bc596, type: 3}
+    PortraitRight: {fileID: 21300000, guid: 815a5e7ab70bab840a6a094146de2364, type: 3}
+    DarkenedPortraitRight: 0
+    name: "Rob\xF4"
+    text: "Ol\xE1, tudo bem amiguinha?"
+    dialogueTrack:
+      Guid:
+        Data1: 1131202597
+        Data2: 1342113232
+        Data3: 378843291
+        Data4: 1306317415
+      Path: event:/ADVENTURES/AV01/DIALOGUE/Ajudante da Academia/01 ola tudo bem
+        amiguinha
+  - PortraitLeft: {fileID: 21300000, guid: 8d9b70b5aa59648449b31d39617bc596, type: 3}
+    PortraitRight: {fileID: 21300000, guid: 815a5e7ab70bab840a6a094146de2364, type: 3}
+    DarkenedPortraitRight: 0
+    name: "Rob\xF4"
+    text: "N\xE3o tenha medo, sou um rob\xF4 ajudante da Academia de Exploradores."
+    dialogueTrack:
+      Guid:
+        Data1: 1285950913
+        Data2: 1260353628
+        Data3: 1832961717
+        Data4: 825491835
+      Path: event:/ADVENTURES/AV01/DIALOGUE/Ajudante da Academia/02 nao tenha medo
+        sou um robo ajudante
+  - PortraitLeft: {fileID: 21300000, guid: 368e33488dff257489436b694230d560, type: 3}
+    PortraitRight: {fileID: 21300000, guid: 815a5e7ab70bab840a6a094146de2364, type: 3}
+    DarkenedPortraitRight: 1
+    name: Laura
+    text: Ajudante da Academia?
+    dialogueTrack:
+      Guid:
+        Data1: 1620398301
+        Data2: 1331200939
+        Data3: 1376583067
+        Data4: 991903666
+      Path: event:/ADVENTURES/AV01/DIALOGUE/Laura/15 ajudante da academia
+  - PortraitLeft: {fileID: 21300000, guid: 8d9b70b5aa59648449b31d39617bc596, type: 3}
+    PortraitRight: {fileID: 21300000, guid: 815a5e7ab70bab840a6a094146de2364, type: 3}
+    DarkenedPortraitRight: 0
+    name: "Rob\xF4"
+    text: "Sim, ajudarei voc\xEA a chegar na Academia de Exploradores, mas voc\xEA
+      precisa ser esperta."
+    dialogueTrack:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
+  - PortraitLeft: {fileID: 21300000, guid: 368e33488dff257489436b694230d560, type: 3}
+    PortraitRight: {fileID: 21300000, guid: 815a5e7ab70bab840a6a094146de2364, type: 3}
+    DarkenedPortraitRight: 1
+    name: Laura
+    text: 'Sim, afinal eu serei uma exploradora! '
+    dialogueTrack:
+      Guid:
+        Data1: -842618875
+        Data2: 1227706760
+        Data3: 930067096
+        Data4: -865981746
+      Path: event:/ADVENTURES/AV01/DIALOGUE/Laura/16 sim afinal eu serei uma exploradora
+  - PortraitLeft: {fileID: 21300000, guid: 368e33488dff257489436b694230d560, type: 3}
+    PortraitRight: {fileID: 21300000, guid: 815a5e7ab70bab840a6a094146de2364, type: 3}
+    DarkenedPortraitRight: 1
+    name: Laura
+    text: "Minha tia j\xE1 me ensinou as dire\xE7\xF5es."
+    dialogueTrack:
+      Guid:
+        Data1: -1282720635
+        Data2: 1099194072
+        Data3: 1097575557
+        Data4: 591260019
+      Path: "event:/ADVENTURES/AV01/DIALOGUE/Laura/17 minha tia me ensinou as dire\xE7oes"
+  - PortraitLeft: {fileID: 21300000, guid: 8d9b70b5aa59648449b31d39617bc596, type: 3}
+    PortraitRight: {fileID: 21300000, guid: 815a5e7ab70bab840a6a094146de2364, type: 3}
+    DarkenedPortraitRight: 0
+    name: "Rob\xF4"
+    text: "\xD3timo! Para chegar l\xE1 voc\xEA precisar\xE1 passar pelos port\xF5es."
+    dialogueTrack:
+      Guid:
+        Data1: 19895240
+        Data2: 1324373127
+        Data3: 1635773364
+        Data4: -2009690138
+      Path: event:/ADVENTURES/AV01/DIALOGUE/Ajudante da Academia/04 otimo para chegar
+        la precisara passar pelos portoes
+  - PortraitLeft: {fileID: 21300000, guid: 368e33488dff257489436b694230d560, type: 3}
+    PortraitRight: {fileID: 21300000, guid: 815a5e7ab70bab840a6a094146de2364, type: 3}
+    DarkenedPortraitRight: 1
+    name: Laura
+    text: "E como eu fa\xE7o isso?"
+    dialogueTrack:
+      Guid:
+        Data1: -1248212893
+        Data2: 1333976746
+        Data3: -708039284
+        Data4: 767877660
+      Path: "event:/ADVENTURES/AV01/DIALOGUE/Laura/18 e como eu fa\xE7o isso"
+  - PortraitLeft: {fileID: 21300000, guid: 8d9b70b5aa59648449b31d39617bc596, type: 3}
+    PortraitRight: {fileID: 21300000, guid: 815a5e7ab70bab840a6a094146de2364, type: 3}
+    DarkenedPortraitRight: 0
+    name: "Rob\xF4"
+    text: "Basta seguir as setas e girar a engrenagem que abre o port\xE3o da dire\xE7\xE3o
+      correta."
+    dialogueTrack:
+      Guid:
+        Data1: 251367192
+        Data2: 1247238257
+        Data3: 1919959191
+        Data4: -1995089083
+      Path: event:/ADVENTURES/AV01/DIALOGUE/Ajudante da Academia/05 basta seguir
+        as setas girar a engrenagem que abre portao
+  - PortraitLeft: {fileID: 21300000, guid: 33e3911f615bc4c49961b32c8435bdf5, type: 3}
+    PortraitRight: {fileID: 21300000, guid: 815a5e7ab70bab840a6a094146de2364, type: 3}
+    DarkenedPortraitRight: 1
+    name: Laura
+    text: Deixa comigo!
+    dialogueTrack:
+      Guid:
+        Data1: 1271631942
+        Data2: 1108375621
+        Data3: -316485503
+        Data4: 2090425288
+      Path: event:/ADVENTURES/AV01/DIALOGUE/Laura/03 deixa comigo

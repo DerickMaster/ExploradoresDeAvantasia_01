@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4f90f31262b514449f837a928b248c8, type: 3}
+  m_Name: Di_MiniGame01
+  m_EditorClassIdentifier: 
+  dialogue:
+  - PortraitLeft: {fileID: 21300000, guid: 8d9b70b5aa59648449b31d39617bc596, type: 3}
+    PortraitRight: {fileID: 21300000, guid: 815a5e7ab70bab840a6a094146de2364, type: 3}
+    DarkenedPortraitRight: 0
+    name: "Rob\xF4 Ajudante"
+    text: "Vamos praticar as dire\xE7\xF5es!\r\n"
+    dialogueTrack:
+      Guid:
+        Data1: 335419726
+        Data2: 1257936275
+        Data3: 545567129
+        Data4: -1928106744
+      Path: event:/DESAFIOS/DIALOGUES/DESAFIO01/d 01 vamos praticar as direcoes
+  - PortraitLeft: {fileID: 21300000, guid: 8d9b70b5aa59648449b31d39617bc596, type: 3}
+    PortraitRight: {fileID: 21300000, guid: 815a5e7ab70bab840a6a094146de2364, type: 3}
+    DarkenedPortraitRight: 0
+    name: "Rob\xF4 Ajudante"
+    text: "Acerte as dire\xE7\xF5es para ajudar Laura a seguir o caminho correto
+      no menor tempo poss\xEDvel."
+    dialogueTrack:
+      Guid:
+        Data1: -1606555010
+        Data2: 1111435506
+        Data3: 1177751475
+        Data4: -475807979
+      Path: event:/DESAFIOS/DIALOGUES/DESAFIO01/d 02 acerte as direcoes para ajudar
+  - PortraitLeft: {fileID: 21300000, guid: 8d9b70b5aa59648449b31d39617bc596, type: 3}
+    PortraitRight: {fileID: 21300000, guid: 815a5e7ab70bab840a6a094146de2364, type: 3}
+    DarkenedPortraitRight: 0
+    name: "Rob\xF4 Ajudante"
+    text: "Ah\u2026 Cuidado com as frutas-bomba!"
+    dialogueTrack:
+      Guid:
+        Data1: -1157404785
+        Data2: 1182942024
+        Data3: -1735077479
+        Data4: -1751882
+      Path: event:/DESAFIOS/DIALOGUES/DESAFIO01/d 03 ah cuidado com as frutas bombas

@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4f90f31262b514449f837a928b248c8, type: 3}
+  m_Name: Di_desafio05_Intro
+  m_EditorClassIdentifier: 
+  dialogue:
+  - PortraitLeft: {fileID: 21300000, guid: 8d9b70b5aa59648449b31d39617bc596, type: 3}
+    PortraitRight: {fileID: 21300000, guid: 9b5d9dc0bba145442b70746e28821a7f, type: 3}
+    DarkenedPortraitRight: 0
+    name: Gnomo
+    text: Preciso de ajuda para organizar os livros da biblioteca.
+    dialogueTrack:
+      Guid:
+        Data1: 643720097
+        Data2: 1313579895
+        Data3: 1656197265
+        Data4: 1372438782
+      Path: event:/DESAFIOS/DIALOGUES/DESAFIO05/d 01 preciso de ajuda para organizar
+        os livros da
+  - PortraitLeft: {fileID: 21300000, guid: 130724f34096ff6438c9ae5cd8a3682c, type: 3}
+    PortraitRight: {fileID: 21300000, guid: 9b5d9dc0bba145442b70746e28821a7f, type: 3}
+    DarkenedPortraitRight: 0
+    name: Gnomo
+    text: "Use Bia para interagir com os livros m\xE1gicos e abrir as pontes!"
+    dialogueTrack:
+      Guid:
+        Data1: -263622010
+        Data2: 1230394274
+        Data3: 1990933406
+        Data4: 1474462792
+      Path: event:/DESAFIOS/DIALOGUES/DESAFIO05/d 02 use Bia para interagir com os
+        livros
+  - PortraitLeft: {fileID: 21300000, guid: 8d9b70b5aa59648449b31d39617bc596, type: 3}
+    PortraitRight: {fileID: 21300000, guid: 9b5d9dc0bba145442b70746e28821a7f, type: 3}
+    DarkenedPortraitRight: 0
+    name: Gnomo
+    text: 'Colete os livros de acordo com a quantidade e cor de cada portal.
+
+'
+    dialogueTrack:
+      Guid:
+        Data1: -1055299561
+        Data2: 1222024119
+        Data3: -517150816
+        Data4: 58974590
+      Path: event:/DESAFIOS/DIALOGUES/DESAFIO05/d 03 colete os livros de acordo com
+        a
+  - PortraitLeft: {fileID: 21300000, guid: 130724f34096ff6438c9ae5cd8a3682c, type: 3}
+    PortraitRight: {fileID: 21300000, guid: 9b5d9dc0bba145442b70746e28821a7f, type: 3}
+    DarkenedPortraitRight: 0
+    name: Gnomo
+    text: "Ah e cuidado com os m\xEDmicos."
+    dialogueTrack:
+      Guid:
+        Data1: -1635747158
+        Data2: 1333876936
+        Data3: 499746690
+        Data4: -994437118
+      Path: "event:/DESAFIOS/DIALOGUES/DESAFIO05/d 04 ah e cuidado com os m\xEDmicos"

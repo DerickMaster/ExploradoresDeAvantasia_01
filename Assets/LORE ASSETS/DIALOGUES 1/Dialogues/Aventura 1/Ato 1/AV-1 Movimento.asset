@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4f90f31262b514449f837a928b248c8, type: 3}
+  m_Name: AV-1 Movimento
+  m_EditorClassIdentifier: 
+  dialogue:
+  - PortraitLeft: {fileID: 21300000, guid: 368e33488dff257489436b694230d560, type: 3}
+    PortraitRight: {fileID: 21300000, guid: b41cc57e5f4be6344a63676d064dc1f9, type: 3}
+    DarkenedPortraitRight: 1
+    name: Laura
+    text: "Entendi tudo, j\xE1 posso ir?"
+    dialogueTrack:
+      Guid:
+        Data1: 29539916
+        Data2: 1307269886
+        Data3: 219245715
+        Data4: -245379644
+      Path: event:/ADVENTURES/AV01/DIALOGUE/Laura/06 entendi tudo ja posso ir
+  - PortraitLeft: {fileID: 21300000, guid: 8d9b70b5aa59648449b31d39617bc596, type: 3}
+    PortraitRight: {fileID: 21300000, guid: d72efe666cab0024aa30d73d5d4d361e, type: 3}
+    DarkenedPortraitRight: 0
+    name: Tia da Laura
+    text: "Primeiro vamos fazer um teste: v\xE1 at\xE9 a vendinha do Sr. Nael para
+      comprar o seu lanche. "
+    dialogueTrack:
+      Guid:
+        Data1: -1012826022
+        Data2: 1319762076
+        Data3: 652415385
+        Data4: 1958312506
+      Path: "event:/ADVENTURES/AV01/DIALOGUE/Tia da Laura/14 primeiro vamos fazer
+        um teste, va at\xE9 a vendinha"
+  - PortraitLeft: {fileID: 21300000, guid: 8d9b70b5aa59648449b31d39617bc596, type: 3}
+    PortraitRight: {fileID: 21300000, guid: d72efe666cab0024aa30d73d5d4d361e, type: 3}
+    DarkenedPortraitRight: 0
+    name: Tia da Laura
+    text: Basta seguir as setas.
+    dialogueTrack:
+      Guid:
+        Data1: -2048125104
+        Data2: 1184595303
+        Data3: 405381033
+        Data4: 605448622
+      Path: event:/ADVENTURES/AV01/DIALOGUE/Tia da Laura/15 basta seguir as setas

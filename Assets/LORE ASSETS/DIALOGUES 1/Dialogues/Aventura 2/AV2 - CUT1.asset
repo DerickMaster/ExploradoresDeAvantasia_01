@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4f90f31262b514449f837a928b248c8, type: 3}
+  m_Name: AV2 - CUT1
+  m_EditorClassIdentifier: 
+  dialogue:
+  - PortraitLeft: {fileID: 21300000, guid: be760bc3e55aaa84eb17cd167715bbd3, type: 3}
+    PortraitRight: {fileID: 21300000, guid: d51555c6ebde96844af599840e2a559d, type: 3}
+    DarkenedPortraitRight: 0
+    name: Protetor da Floresta
+    text: "OL\xC1 MENINO. EU SOU O ESP\xCDRITO DESSA FLORESTA."
+    dialogueTrack: 
+  - PortraitLeft: {fileID: 21300000, guid: be760bc3e55aaa84eb17cd167715bbd3, type: 3}
+    PortraitRight: {fileID: 21300000, guid: b02901a4df7bfe946abf54305a2c2c82, type: 3}
+    DarkenedPortraitRight: 0
+    name: Protetor da Floresta
+    text: "PERCEBO QUE VOC\xCA TEM UM CORA\xC7\xC3O PURO. VOU TE AJUDAR A SAIR. SIGA
+      AS DIRE\xC7\xD5ES QUE EU TE DISSER."
+    dialogueTrack: 

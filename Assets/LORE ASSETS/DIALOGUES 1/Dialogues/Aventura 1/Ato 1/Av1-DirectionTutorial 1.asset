@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4f90f31262b514449f837a928b248c8, type: 3}
+  m_Name: Av1-DirectionTutorial 1
+  m_EditorClassIdentifier: 
+  dialogue:
+  - PortraitLeft: {fileID: 21300000, guid: 8d9b70b5aa59648449b31d39617bc596, type: 3}
+    PortraitRight: {fileID: 21300000, guid: d72efe666cab0024aa30d73d5d4d361e, type: 3}
+    DarkenedPortraitRight: 0
+    name: Tia da Laura
+    text: "Veja, a seta est\xE1 apontando para a direita. Ent\xE3o a bola est\xE1
+      \xE0 direita."
+    dialogueTrack:
+      Guid:
+        Data1: -1550563181
+        Data2: 1278998818
+        Data3: 333950384
+        Data4: -582459823
+      Path: "event:/ADVENTURES/AV01/DIALOGUE/Tia da Laura/11 veja, a seta est\xE1
+        apontando para a direita"
+  - PortraitLeft: {fileID: 21300000, guid: 8d9b70b5aa59648449b31d39617bc596, type: 3}
+    PortraitRight: {fileID: 21300000, guid: d72efe666cab0024aa30d73d5d4d361e, type: 3}
+    DarkenedPortraitRight: 0
+    name: Tia da Laura
+    text: "Agora a seta est\xE1 apontando para a esquerda. Assim, a caixa est\xE1
+      \xE0 esquerda."
+    dialogueTrack:
+      Guid:
+        Data1: -797965813
+        Data2: 1214953268
+        Data3: -504311877
+        Data4: -946228742
+      Path: "event:/ADVENTURES/AV01/DIALOGUE/Tia da Laura/12 agora a seta est\xE1
+        apontando para a esquerda. assim"
+  - PortraitLeft: {fileID: 21300000, guid: 8d9b70b5aa59648449b31d39617bc596, type: 3}
+    PortraitRight: {fileID: 21300000, guid: 5977f853948f41b498a037bf37a0922a, type: 3}
+    DarkenedPortraitRight: 0
+    name: Tia da Laura
+    text: "Bem simples, n\xE3o \xE9?!"
+    dialogueTrack:
+      Guid:
+        Data1: -1424573352
+        Data2: 1147041322
+        Data3: 1479412392
+        Data4: 1496019910
+      Path: event:/ADVENTURES/AV01/DIALOGUE/Tia da Laura/13 bem simples nao e
+  - PortraitLeft: {fileID: 21300000, guid: 368e33488dff257489436b694230d560, type: 3}
+    PortraitRight: {fileID: 21300000, guid: 5977f853948f41b498a037bf37a0922a, type: 3}
+    DarkenedPortraitRight: 1
+    name: Laura
+    text: "Entendi tudo, j\xE1 posso ir?"
+    dialogueTrack:
+      Guid:
+        Data1: 29539916
+        Data2: 1307269886
+        Data3: 219245715
+        Data4: -245379644
+      Path: event:/ADVENTURES/AV01/DIALOGUE/Laura/06 entendi tudo ja posso ir

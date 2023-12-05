@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4f90f31262b514449f837a928b248c8, type: 3}
+  m_Name: Di_boss03
+  m_EditorClassIdentifier: 
+  dialogue:
+  - PortraitLeft: {fileID: 21300000, guid: 9051da89db290184fb1b15628a35c36b, type: 3}
+    PortraitRight: {fileID: 21300000, guid: 7500551325a62354ebbe06b9eb5a7a9e, type: 3}
+    DarkenedPortraitRight: 0
+    name: Gri
+    text: "Bia, cuidado! Algu\xE9m enfureceu a fornalha m\xE1gica."
+    dialogueTrack:
+      Guid:
+        Data1: -135979355
+        Data2: 1166588482
+        Data3: 1485101752
+        Data4: -1677886472
+      Path: event:/ADVENTURES/AV03/DIALOGUE/d 01 bia cuidado alguem infureceu a fornalha
+        magica
+  - PortraitLeft: {fileID: 21300000, guid: 130724f34096ff6438c9ae5cd8a3682c, type: 3}
+    PortraitRight: {fileID: 21300000, guid: 8b2fa31c5b6d5a543abce694b5bde1d2, type: 3}
+    DarkenedPortraitRight: 0
+    name: Gri
+    text: "As bolas de carv\xE3o machucam, tome cuidado."
+    dialogueTrack:
+      Guid:
+        Data1: -1736645734
+        Data2: 1094584145
+        Data3: 1074792325
+        Data4: -914761319
+      Path: "event:/ADVENTURES/AV03/DIALOGUE/d 02 as bolas de carv\xE3o machucam
+        tome cuidado"
+  - PortraitLeft: {fileID: 21300000, guid: 9051da89db290184fb1b15628a35c36b, type: 3}
+    PortraitRight: {fileID: 21300000, guid: 7500551325a62354ebbe06b9eb5a7a9e, type: 3}
+    DarkenedPortraitRight: 0
+    name: Gri
+    text: "Algu\xE9m deve ter colocado uma tranca m\xE1gica; coloque as letras iguais
+      para resolver."
+    dialogueTrack:
+      Guid:
+        Data1: -117281881
+        Data2: 1180833047
+        Data3: 980041875
+        Data4: 131379483
+      Path: event:/ADVENTURES/AV03/DIALOGUE/d 03 alguem deve ter colocado uma tranca
+  - PortraitLeft: {fileID: 21300000, guid: 130724f34096ff6438c9ae5cd8a3682c, type: 3}
+    PortraitRight: {fileID: 21300000, guid: bc54f7c0a12824c4ba4a965a2543581b, type: 3}
+    DarkenedPortraitRight: 0
+    name: Gri
+    text: Depois, encaixe os objetos em seus lugares respectivos para acalmar a fornalha.
+    dialogueTrack:
+      Guid:
+        Data1: 1460641567
+        Data2: 1294674018
+        Data3: 1009398926
+        Data4: -79309952
+      Path: event:/ADVENTURES/AV03/DIALOGUE/d 04 depois encaixe os objetos em seus
+        lugares respectivos

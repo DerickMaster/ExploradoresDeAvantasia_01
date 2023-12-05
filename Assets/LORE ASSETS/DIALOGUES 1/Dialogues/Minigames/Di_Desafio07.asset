@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4f90f31262b514449f837a928b248c8, type: 3}
+  m_Name: Di_Desafio07
+  m_EditorClassIdentifier: 
+  dialogue:
+  - PortraitLeft: {fileID: 21300000, guid: 8d9b70b5aa59648449b31d39617bc596, type: 3}
+    PortraitRight: {fileID: 21300000, guid: 7836a3095016b164d98cc55b0eab321e, type: 3}
+    DarkenedPortraitRight: 0
+    name: Professora Alissa
+    text: "\xC9 hora da divers\xE3o! Apresento a gincana das letras!"
+    dialogueTrack:
+      Guid:
+        Data1: 657622611
+        Data2: 1140584604
+        Data3: -21178751
+        Data4: 1404592860
+      Path: event:/DESAFIOS/DIALOGUES/DESAFIO07/d 01 e hora da diversao apresento
+        a gincana
+  - PortraitLeft: {fileID: 21300000, guid: 130724f34096ff6438c9ae5cd8a3682c, type: 3}
+    PortraitRight: {fileID: 21300000, guid: 7836a3095016b164d98cc55b0eab321e, type: 3}
+    DarkenedPortraitRight: 0
+    name: Professora Alissa
+    text: "Voc\xEA deve acertar apenas as letras!"
+    dialogueTrack:
+      Guid:
+        Data1: -572559448
+        Data2: 1270222941
+        Data3: -1018546549
+        Data4: -1994267649
+      Path: event:/DESAFIOS/DIALOGUES/DESAFIO07/d 02 voce deve acerta apenas as letras
+  - PortraitLeft: {fileID: 21300000, guid: be760bc3e55aaa84eb17cd167715bbd3, type: 3}
+    PortraitRight: {fileID: 21300000, guid: 7836a3095016b164d98cc55b0eab321e, type: 3}
+    DarkenedPortraitRight: 0
+    name: Professora Alissa
+    text: "Ap\xF3s coletar as letras responda a pergunta apertando o bot\xE3o SIM
+      ou N\xC3O"
+    dialogueTrack:
+      Guid:
+        Data1: 1878688437
+        Data2: 1192560090
+        Data3: -1681996394
+        Data4: -1409052485
+      Path: event:/DESAFIOS/DIALOGUES/DESAFIO07/d 03 apos coletar as letras responda
+        a pergunta
+  - PortraitLeft: {fileID: 21300000, guid: e4ec0b010a994e64f8f938b0548bfd07, type: 3}
+    PortraitRight: {fileID: 21300000, guid: 7836a3095016b164d98cc55b0eab321e, type: 3}
+    DarkenedPortraitRight: 0
+    name: Professora Alissa
+    text: "Cuidado com os n\xFAmeros! Pegue apenas as letras."
+    dialogueTrack:
+      Guid:
+        Data1: 1881772067
+        Data2: 1260688234
+        Data3: -384663149
+        Data4: -518861129
+      Path: event:/DESAFIOS/DIALOGUES/DESAFIO07/d 04 cuidado com o numero pegue apenas

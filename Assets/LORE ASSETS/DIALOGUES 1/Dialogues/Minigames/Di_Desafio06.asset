@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4f90f31262b514449f837a928b248c8, type: 3}
+  m_Name: Di_Desafio06
+  m_EditorClassIdentifier: 
+  dialogue:
+  - PortraitLeft: {fileID: 21300000, guid: e4ec0b010a994e64f8f938b0548bfd07, type: 3}
+    PortraitRight: {fileID: 21300000, guid: 02075c353f54c514ebd496dd1c5b4150, type: 3}
+    DarkenedPortraitRight: 0
+    name: Jester
+    text: 'Precisam das chaves aventureiros, vamos brincar um pouco.
+
+'
+    dialogueTrack:
+      Guid:
+        Data1: -297676662
+        Data2: 1179942986
+        Data3: 1503679113
+        Data4: 2114129045
+      Path: event:/DESAFIOS/DIALOGUES/DESAFIO06/d 01 precisam das chaves aventureiros,
+        vamos brincar um pouco
+  - PortraitLeft: {fileID: 21300000, guid: 8e981b1cc1c71bc45ab3bce6d78e5b3e, type: 3}
+    PortraitRight: {fileID: 21300000, guid: 2cacf5e620a5a0144821bf0374e6df8b, type: 3}
+    DarkenedPortraitRight: 0
+    name: Jester
+    text: "Voc\xEA precisa atravessar esse ambiente, deixei uma surpresa para voc\xEA.\r\n"
+    dialogueTrack:
+      Guid:
+        Data1: -1729937982
+        Data2: 1137654767
+        Data3: -1671327571
+        Data4: -1999305161
+      Path: event:/DESAFIOS/DIALOGUES/DESAFIO06/d 02 voce precisa atravessar esse
+        ambiente, deixei uma
+  - PortraitLeft: {fileID: 21300000, guid: 1ea5bce279f3c6e44bdfe48853020907, type: 3}
+    PortraitRight: {fileID: 21300000, guid: 02075c353f54c514ebd496dd1c5b4150, type: 3}
+    DarkenedPortraitRight: 0
+    name: Jester
+    text: "A ordem dos n\xFAmeros ter\xE1 que seguir, se n\xE3o conseguir, o ch\xE3o
+      vai cair!\n"
+    dialogueTrack:
+      Guid:
+        Data1: 1160298091
+        Data2: 1138023506
+        Data3: -1820147041
+        Data4: 861864989
+      Path: event:/DESAFIOS/DIALOGUES/DESAFIO06/d 03 a ordem dos numeros tera que
+        seguir, se nao
+  - PortraitLeft: {fileID: 21300000, guid: 4fc3cd0c4bddef1479be0792522b10d1, type: 3}
+    PortraitRight: {fileID: 21300000, guid: 643f212ec8c289a43ba4fe1a0c3aca3a, type: 3}
+    DarkenedPortraitRight: 0
+    name: Jester
+    text: "Letras e s\xEDmbolos \xE9 bom evitar.\r\nSen\xE3o, o final n\xE3o vai
+      alcan\xE7ar!\r\n"
+    dialogueTrack:
+      Guid:
+        Data1: -1248300081
+        Data2: 1283848698
+        Data3: 2060305290
+        Data4: -910588086
+      Path: event:/DESAFIOS/DIALOGUES/DESAFIO06/d 04 letras e simbolos e bom evitar

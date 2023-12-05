@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4f90f31262b514449f837a928b248c8, type: 3}
+  m_Name: AV-1 01
+  m_EditorClassIdentifier: 
+  dialogue:
+  - PortraitLeft: {fileID: 21300000, guid: 8d9b70b5aa59648449b31d39617bc596, type: 3}
+    PortraitRight: {fileID: 21300000, guid: b41cc57e5f4be6344a63676d064dc1f9, type: 3}
+    DarkenedPortraitRight: 0
+    name: Tia da Laura
+    text: "Est\xE1 animada Laura?"
+    dialogueTrack:
+      Guid:
+        Data1: 840595912
+        Data2: 1320356484
+        Data3: 693727666
+        Data4: -781251781
+      Path: event:/ADVENTURES/AV01/DIALOGUE/Tia da Laura/01 esta animada laura
+  - PortraitLeft: {fileID: 21300000, guid: 368e33488dff257489436b694230d560, type: 3}
+    PortraitRight: {fileID: 21300000, guid: b41cc57e5f4be6344a63676d064dc1f9, type: 3}
+    DarkenedPortraitRight: 1
+    name: Laura
+    text: O que foi, tia?
+    dialogueTrack:
+      Guid:
+        Data1: -797737771
+        Data2: 1077340915
+        Data3: 815621301
+        Data4: -467913288
+      Path: event:/ADVENTURES/AV01/DIALOGUE/Laura/01 O que foi, tia
+  - PortraitLeft: {fileID: 21300000, guid: 8d9b70b5aa59648449b31d39617bc596, type: 3}
+    PortraitRight: {fileID: 21300000, guid: 5977f853948f41b498a037bf37a0922a, type: 3}
+    DarkenedPortraitRight: 0
+    name: Tia de Laura
+    text: "Hoje \xE9 o seu primeiro dia na Academia de Exploradores, esqueceu?"
+    dialogueTrack:
+      Guid:
+        Data1: 244765263
+        Data2: 1170056885
+        Data3: 860011914
+        Data4: 1017867323
+      Path: "event:/ADVENTURES/AV01/DIALOGUE/Tia da Laura/02 hoje \xE9 o seu primeiro
+        dia na Academia"
+  - PortraitLeft: {fileID: 21300000, guid: 368e33488dff257489436b694230d560, type: 3}
+    PortraitRight: {fileID: 21300000, guid: b41cc57e5f4be6344a63676d064dc1f9, type: 3}
+    DarkenedPortraitRight: 1
+    name: Laura
+    text: "Nossa! \xC9 verdade! Ser\xE1 que o bonde j\xE1 passou?"
+    dialogueTrack:
+      Guid:
+        Data1: 899104976
+        Data2: 1076742797
+        Data3: -849670524
+        Data4: -1681037048
+      Path: "event:/ADVENTURES/AV01/DIALOGUE/Laura/02 nossa \xE9 verdade sera que
+        o bonde ja passou"
+  - PortraitLeft: {fileID: 21300000, guid: 8d9b70b5aa59648449b31d39617bc596, type: 3}
+    PortraitRight: {fileID: 21300000, guid: 5977f853948f41b498a037bf37a0922a, type: 3}
+    DarkenedPortraitRight: 0
+    name: Tia de Laura
+    text: " Ainda n\xE3o. Ele passar\xE1 daqui a pouco."
+    dialogueTrack:
+      Guid:
+        Data1: 1895373643
+        Data2: 1191657739
+        Data3: -461481814
+        Data4: 390329167
+      Path: event:/ADVENTURES/AV01/DIALOGUE/Tia da Laura/03 ainda nao. passara daquia
+        pouco
+  - PortraitLeft: {fileID: 21300000, guid: 8d9b70b5aa59648449b31d39617bc596, type: 3}
+    PortraitRight: {fileID: 21300000, guid: d72efe666cab0024aa30d73d5d4d361e, type: 3}
+    DarkenedPortraitRight: 0
+    name: Tia da Laura
+    text: "Mas antes de sair, guarde  todos os brinquedos que deixou espalhados pelo
+      ch\xE3o. Voc\xEA precisa ser mais organizada."
+    dialogueTrack:
+      Guid:
+        Data1: -1337600568
+        Data2: 1223457002
+        Data3: 700076194
+        Data4: 7321855
+      Path: event:/ADVENTURES/AV01/DIALOGUE/Tia da Laura/04 mas antes de sair, guarde
+        no bau todos os brinquedos
+  - PortraitLeft: {fileID: 21300000, guid: 33e3911f615bc4c49961b32c8435bdf5, type: 3}
+    PortraitRight: {fileID: 21300000, guid: d72efe666cab0024aa30d73d5d4d361e, type: 3}
+    DarkenedPortraitRight: 1
+    name: Laura
+    text: Deixa comigo!
+    dialogueTrack:
+      Guid:
+        Data1: 1271631942
+        Data2: 1108375621
+        Data3: -316485503
+        Data4: 2090425288
+      Path: event:/ADVENTURES/AV01/DIALOGUE/Laura/03 deixa comigo
+  - PortraitLeft: {fileID: 21300000, guid: 65aa1c345e9d52a4ca77af0c6cbe4c39, type: 3}
+    PortraitRight: {fileID: 21300000, guid: b41cc57e5f4be6344a63676d064dc1f9, type: 3}
+    DarkenedPortraitRight: 1
+    name: Laura
+    text: "Ai ai! Que bagun\xE7a, preciso guardar todos esses brinquedos no ba\xFA."
+    dialogueTrack:
+      Guid:
+        Data1: 804621188
+        Data2: 1166163971
+        Data3: 431203221
+        Data4: -1618914915
+      Path: "event:/ADVENTURES/AV01/DIALOGUE/Laura/04 ai ai que bagun\xE7a"

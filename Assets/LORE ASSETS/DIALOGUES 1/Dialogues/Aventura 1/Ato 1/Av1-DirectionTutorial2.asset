@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4f90f31262b514449f837a928b248c8, type: 3}
+  m_Name: Av1-DirectionTutorial2
+  m_EditorClassIdentifier: 
+  dialogue:
+  - PortraitLeft: {fileID: 21300000, guid: 8d9b70b5aa59648449b31d39617bc596, type: 3}
+    PortraitRight: {fileID: 21300000, guid: 79a9f407f0419134ea82e6d852e738e4, type: 3}
+    DarkenedPortraitRight: 0
+    name: Sr. Nael
+    text: "Laura, a seta est\xE1 apontando para a parte da frente, indicando as moedas."
+    dialogueTrack:
+      Guid:
+        Data1: 951336381
+        Data2: 1228060243
+        Data3: -193609835
+        Data4: -1549875644
+      Path: event:/ADVENTURES/AV01/DIALOGUE/Sr Nael/06 Laura a seta esta apontado
+        para
+  - PortraitLeft: {fileID: 21300000, guid: 8d9b70b5aa59648449b31d39617bc596, type: 3}
+    PortraitRight: {fileID: 21300000, guid: 79a9f407f0419134ea82e6d852e738e4, type: 3}
+    DarkenedPortraitRight: 0
+    name: Sr. Nael
+    text: "Agora a seta est\xE1 apontando para a caixa atr\xE1s."
+    dialogueTrack:
+      Guid:
+        Data1: 1830488945
+        Data2: 1153583449
+        Data3: 1088177824
+        Data4: -1258142329
+      Path: event:/ADVENTURES/AV01/DIALOGUE/Sr Nael/07 Laura a seta esta apontado
+        para
+  - PortraitLeft: {fileID: 21300000, guid: 8d9b70b5aa59648449b31d39617bc596, type: 3}
+    PortraitRight: {fileID: 21300000, guid: 3b191bc78e24d15499d8e5efb999cf6d, type: 3}
+    DarkenedPortraitRight: 0
+    name: Sr. Nael
+    text: "\xC9 bem simples, n\xE3o \xE9?!"
+    dialogueTrack:
+      Guid:
+        Data1: -801364721
+        Data2: 1293939593
+        Data3: 524687537
+        Data4: 799404803
+      Path: event:/ADVENTURES/AV01/DIALOGUE/Sr Nael/08 Laura a seta esta apontado
+        para
+  - PortraitLeft: {fileID: 21300000, guid: 33e3911f615bc4c49961b32c8435bdf5, type: 3}
+    PortraitRight: {fileID: 21300000, guid: fa5e6e3491942e44691e5d1ea8f2eeaa, type: 3}
+    DarkenedPortraitRight: 1
+    name: Laura
+    text: Deixa comigo!
+    dialogueTrack:
+      Guid:
+        Data1: 1271631942
+        Data2: 1108375621
+        Data3: -316485503
+        Data4: 2090425288
+      Path: event:/ADVENTURES/AV01/DIALOGUE/Laura/03 deixa comigo

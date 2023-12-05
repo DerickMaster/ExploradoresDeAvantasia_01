@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4f90f31262b514449f837a928b248c8, type: 3}
+  m_Name: AV-1 Volta Nael
+  m_EditorClassIdentifier: 
+  dialogue:
+  - PortraitLeft: {fileID: 21300000, guid: 8d9b70b5aa59648449b31d39617bc596, type: 3}
+    PortraitRight: {fileID: 21300000, guid: d72efe666cab0024aa30d73d5d4d361e, type: 3}
+    DarkenedPortraitRight: 0
+    name: Tia da Laura
+    text: "J\xE1 est\xE1 de volta, Laura."
+    dialogueTrack:
+      Guid:
+        Data1: -863907975
+        Data2: 1291714251
+        Data3: 477044639
+        Data4: 1296115265
+      Path: event:/ADVENTURES/AV01/DIALOGUE/Tia da Laura/17 ja esta de volta laura
+  - PortraitLeft: {fileID: 21300000, guid: 65aa1c345e9d52a4ca77af0c6cbe4c39, type: 3}
+    PortraitRight: {fileID: 21300000, guid: 5977f853948f41b498a037bf37a0922a, type: 3}
+    DarkenedPortraitRight: 0
+    name: 'Tia da Laura '
+    text: "Se voc\xEA conseguiu ir at\xE9 o Sr. Nael, ent\xE3o j\xE1 consegue ir
+      sozinha para a Academia de Exploradores."
+    dialogueTrack:
+      Guid:
+        Data1: -1172100204
+        Data2: 1294914138
+        Data3: -1080061785
+        Data4: 1679657675
+      Path: "event:/ADVENTURES/AV01/DIALOGUE/Tia da Laura/18 se voce conseguiu ir
+        at\xE9 o sr. nael, entao j\xE1 consegue"
+  - PortraitLeft: {fileID: 21300000, guid: 368e33488dff257489436b694230d560, type: 3}
+    PortraitRight: {fileID: 21300000, guid: b41cc57e5f4be6344a63676d064dc1f9, type: 3}
+    DarkenedPortraitRight: 1
+    name: Laura
+    text: Esqueci as moedas, tia.
+    dialogueTrack:
+      Guid:
+        Data1: 1692059626
+        Data2: 1123401900
+        Data3: -106812513
+        Data4: 1489890271
+      Path: event:/ADVENTURES/AV01/DIALOGUE/Laura/11 esqueci as moedas
+  - PortraitLeft: {fileID: 21300000, guid: 8d9b70b5aa59648449b31d39617bc596, type: 3}
+    PortraitRight: {fileID: 21300000, guid: d72efe666cab0024aa30d73d5d4d361e, type: 3}
+    DarkenedPortraitRight: 0
+    name: Tia da Laura
+    text: "Hum\u2026Por isso falo para ter cuidado com a bagun\xE7a."
+    dialogueTrack:
+      Guid:
+        Data1: 1200872389
+        Data2: 1178458991
+        Data3: -713215051
+        Data4: -697534482
+      Path: "event:/ADVENTURES/AV01/DIALOGUE/Tia da Laura/19 hum\u2026por isso falo
+        para ter cuidado com a bagun\xE7a"
+  - PortraitLeft: {fileID: 21300000, guid: 368e33488dff257489436b694230d560, type: 3}
+    PortraitRight: {fileID: 21300000, guid: b41cc57e5f4be6344a63676d064dc1f9, type: 3}
+    DarkenedPortraitRight: 1
+    name: Laura
+    text: Vou melhorar!
+    dialogueTrack:
+      Guid:
+        Data1: -649912704
+        Data2: 1323889967
+        Data3: -616617817
+        Data4: 443046620
+      Path: event:/ADVENTURES/AV01/DIALOGUE/Laura/12 vou melhorar
+  - PortraitLeft: {fileID: 21300000, guid: 8d9b70b5aa59648449b31d39617bc596, type: 3}
+    PortraitRight: {fileID: 21300000, guid: 5977f853948f41b498a037bf37a0922a, type: 3}
+    DarkenedPortraitRight: 0
+    name: Tia da Laura
+    text: Tenha cuidado na Academia de Exploradores e seja mais organizada.
+    dialogueTrack:
+      Guid:
+        Data1: 1139282017
+        Data2: 1161341977
+        Data3: -1162519417
+        Data4: -283790451
+      Path: event:/ADVENTURES/AV01/DIALOGUE/Tia da Laura/20 tenha cuidado na Academia
+        de Exploradores
+  - PortraitLeft: {fileID: 21300000, guid: 33e3911f615bc4c49961b32c8435bdf5, type: 3}
+    PortraitRight: {fileID: 21300000, guid: b41cc57e5f4be6344a63676d064dc1f9, type: 3}
+    DarkenedPortraitRight: 1
+    name: Laura
+    text: Deixa comigo!
+    dialogueTrack:
+      Guid:
+        Data1: 1271631942
+        Data2: 1108375621
+        Data3: -316485503
+        Data4: 2090425288
+      Path: event:/ADVENTURES/AV01/DIALOGUE/Laura/03 deixa comigo

@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4f90f31262b514449f837a928b248c8, type: 3}
+  m_Name: Di_MiniGame03
+  m_EditorClassIdentifier: 
+  dialogue:
+  - PortraitLeft: {fileID: 21300000, guid: 130724f34096ff6438c9ae5cd8a3682c, type: 3}
+    PortraitRight: {fileID: 21300000, guid: 8b2fa31c5b6d5a543abce694b5bde1d2, type: 3}
+    DarkenedPortraitRight: 0
+    name: Gri
+    text: "Vamos encontrar a sa\xEDda."
+    dialogueTrack:
+      Guid:
+        Data1: 1959872298
+        Data2: 1079070251
+        Data3: 1185533065
+        Data4: -631605825
+      Path: event:/DESAFIOS/DIALOGUES/DESAFIO03/d 01 vamos encontrar a saida
+  - PortraitLeft: {fileID: 21300000, guid: 130724f34096ff6438c9ae5cd8a3682c, type: 3}
+    PortraitRight: {fileID: 21300000, guid: 7500551325a62354ebbe06b9eb5a7a9e, type: 3}
+    DarkenedPortraitRight: 0
+    name: Gri
+    text: Mova as letras formando a palavra indicada.
+    dialogueTrack:
+      Guid:
+        Data1: -120038211
+        Data2: 1230982067
+        Data3: -1635251574
+        Data4: 292713517
+      Path: event:/DESAFIOS/DIALOGUES/DESAFIO03/d 02 mova as letras formando a palavra
+        indicada
+  - PortraitLeft: {fileID: 21300000, guid: 130724f34096ff6438c9ae5cd8a3682c, type: 3}
+    PortraitRight: {fileID: 21300000, guid: 8b2fa31c5b6d5a543abce694b5bde1d2, type: 3}
+    DarkenedPortraitRight: 0
+    name: Gri
+    text: "Depois aperte o bot\xE3o para desbloquear o caminho!"
+    dialogueTrack:
+      Guid:
+        Data1: -1465531284
+        Data2: 1198838559
+        Data3: 150254518
+        Data4: 2115887037
+      Path: event:/DESAFIOS/DIALOGUES/DESAFIO03/d 03 depois aperte o botao para desbloquear
+  - PortraitLeft: {fileID: 21300000, guid: 130724f34096ff6438c9ae5cd8a3682c, type: 3}
+    PortraitRight: {fileID: 21300000, guid: bc54f7c0a12824c4ba4a965a2543581b, type: 3}
+    DarkenedPortraitRight: 0
+    name: Gri
+    text: "Aaah\u2026 E cuidado com os goblins."
+    dialogueTrack:
+      Guid:
+        Data1: -1912938887
+        Data2: 1308207746
+        Data3: -1290066013
+        Data4: -1874745486
+      Path: event:/DESAFIOS/DIALOGUES/DESAFIO03/d 04 aah... cuidado com os goblins

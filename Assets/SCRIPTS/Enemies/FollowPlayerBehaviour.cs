@@ -34,6 +34,16 @@ public class FollowPlayerBehaviour : MonoBehaviour
         FollowPlayer();
     }
 
+    public void SetSpeed(float newSpd)
+    {
+        agent.speed = newSpd;
+    }
+
+    public float GetSpeed()
+    {
+        return agent.speed;
+    }
+
     public Vector3 AdjustLookDirection(NavMeshPath path)
     {
         int id;

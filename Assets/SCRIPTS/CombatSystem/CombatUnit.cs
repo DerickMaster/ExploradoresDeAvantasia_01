@@ -3,6 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
+[System.Serializable]
+public struct MoveChain
+{
+    [SerializeField] public string[] attackNames;
+}
+
 public class CombatUnit : MonoBehaviour
 {
     [SerializeField] Attack[] attackList;
@@ -13,14 +19,9 @@ public class CombatUnit : MonoBehaviour
     private string[] chainToUse;
     private int chainLength = 0;
     private int curSequence;
-    public UnityEvent<string> MoveUsedEvent { private set; get; }
-    public UnityEvent MoveFinishedEvent { private set; get; }
-
-    private void Awake()
-    {
-        MoveUsedEvent = new UnityEvent<string>();
-        MoveFinishedEvent = new UnityEvent();
-    }
+    [HideInInspector] public UnityEvent<string> MoveUsedEvent;
+    [HideInInspector] public UnityEvent MoveFinishedEvent;
+    [HideInInspector] public UnityEvent ChainFinishedEvent;
 
     private void Start()
     {
@@ -40,7 +41,21 @@ public class CombatUnit : MonoBehaviour
         UseMove(moveName);
     }
 
-    
+    public UnityEvent UseMove(MoveChain move)
+    {
+        if (move.attackNames.Length == 1)
+        {
+            UseMove(move.attackNames[0]);
+            return MoveFinishedEvent;
+        }
+        else 
+        {
+            UseChain(move.attackNames);
+            return ChainFinishedEvent;
+        }
+        
+    }
+
     public void UseChain(string[] chainToUse)
     {
         this.chainToUse = chainToUse;
@@ -78,7 +93,6 @@ public class CombatUnit : MonoBehaviour
     public void CheckHitBox()
     {
         if (m_Moves.TryGetValue(moveName, out atk)) return;
-        //Debug.Log("Ataque encontrado");
         else Debug.Log("Ataque nao encontrado");
     }
 
@@ -116,8 +130,9 @@ public class CombatUnit : MonoBehaviour
         {
             UseMove(chainToUse[curSequence], true);
         }
-        else
+        else if(chainLength > 1)
         {
+            ChainFinishedEvent.Invoke();
             SetChaining(false);
             chainLength = 0;
         }

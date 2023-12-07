@@ -57,7 +57,7 @@ public class TurtlesPathActivator : InteractableObject
 
         if(player) player.SwitchControl(false);
 
-        if (!selfDeactivated) return;
+        if (selfDeactivated) return;
 
         foreach (TurtlesPathActivator activator in activators)
         {

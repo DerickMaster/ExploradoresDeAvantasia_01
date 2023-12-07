@@ -4,12 +4,6 @@ using UnityEngine;
 public class LibraryBossBehaviour : MonoBehaviour
 {
     [System.Serializable]
-    private struct MoveChain
-    {
-        [SerializeField] public string[] attackNames;
-    }
-
-    [System.Serializable]
     private struct DangerArea
     {
         public string moveName;

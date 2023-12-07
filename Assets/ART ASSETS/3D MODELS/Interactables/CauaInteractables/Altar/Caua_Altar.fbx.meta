@@ -3,7 +3,17 @@ guid: a60a02b9e3838ef40a7d0d88bc1bd330
 ModelImporter:
   serializedVersion: 20300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Caua_Altar
+    second: {fileID: 2100000, guid: 9e030a16bfdaa1340abf6b3cc1190440, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Caua_Color
+    second: {fileID: 2100000, guid: 2c61eb38ef23ad34fbfec90aa808bbc0, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

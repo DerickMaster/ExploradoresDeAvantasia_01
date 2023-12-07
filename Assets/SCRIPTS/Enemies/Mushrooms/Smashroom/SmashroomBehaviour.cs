@@ -26,7 +26,8 @@ public class SmashroomBehaviour : EnemyBehaviour
         base.Start();
         _combatUnit = GetComponent<CombatUnit>();
         _followPlayer = GetComponent<FollowPlayerBehaviour>();
-        //_warningCircle = GetComponentInChildren<CircleWarningBehaviour>();
+        _warningCircle = GetComponentInChildren<CircleWarningBehaviour>();
+        _warningCircle.transform.SetParent(null);
         _warningCircle.gameObject.SetActive(false);
 
         GetComponentInChildren<CombatAnimationsListener>().startCheckingArea.AddListener(_combatUnit.CheckHit);

@@ -15,6 +15,7 @@ public class Adventure3BossManager : MonoBehaviour
     [SerializeField] string[] expectedWords;
 
     [SerializeField] PlayableDirector cutscene;
+    [SerializeField] Camera bossFightCamera;
 
     // Start is called before the first frame update
     void Start()
@@ -35,6 +36,7 @@ public class Adventure3BossManager : MonoBehaviour
     public void StartBossFight()
     {
         boss.SetRageMode(true);
+        bossFightCamera.gameObject.SetActive(true);
     }
 
     public PlayableDirector _bossVictoryCin;
@@ -45,10 +47,12 @@ public class Adventure3BossManager : MonoBehaviour
         socketsFilledAmount++;
         if (socketsFilledAmount >= 2)
         {
+            bossFightCamera.gameObject.SetActive(false);
             _bossVictoryCin.Play();
         }
         else
         {
+            bossFightCamera.gameObject.SetActive(true);
             SetSpawnPowerObjs(false);
             boss.SetRageMode(true);
         }
@@ -89,6 +93,7 @@ public class Adventure3BossManager : MonoBehaviour
     private void EnterCalmPhase()
     {
         Invoke(nameof(ActivateCalmPhaseObjs), 1f);
+        bossFightCamera.gameObject.SetActive(false);
     }
 
     private void ActivateCalmPhaseObjs()

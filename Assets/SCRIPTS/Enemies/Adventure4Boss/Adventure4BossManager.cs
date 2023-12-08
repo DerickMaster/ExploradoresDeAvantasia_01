@@ -14,6 +14,8 @@ public class Adventure4BossManager : MonoBehaviour
     private int currentCount = 0;
     [SerializeField] private int expectedCount;
 
+    [SerializeField] GameObject bossFightCamera;
+
 
     private void Start()
     {
@@ -47,6 +49,7 @@ public class Adventure4BossManager : MonoBehaviour
     public void StartBossFight()
     {
         boss.StartFight();
+        bossFightCamera.SetActive(true);
     }
 
     private void DropNextLetter()
@@ -68,6 +71,7 @@ public class Adventure4BossManager : MonoBehaviour
     public PlayableDirector _bossVictoryCin;
     private void PuzzleCompleted() 
     {
+        bossFightCamera.SetActive(false);
         _bossVictoryCin.Play();
     }
 }

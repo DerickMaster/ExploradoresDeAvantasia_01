@@ -6,10 +6,11 @@ namespace Challenge_10
 {
     public class LettersManager : MonoBehaviour
     {
-        private MeshFilter[] slotsMeshFilers;
-        readonly string letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         [SerializeField] private Mesh[] lettersMeshes;
+
+        private MeshFilter[] slotsMeshFilters;
         private Dictionary<char, Mesh> lettersMeshDict;
+        readonly string letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
         private void Start()
         {
@@ -18,17 +19,17 @@ namespace Challenge_10
             {
                 lettersMeshDict.Add(letters[i], lettersMeshes[i]);
             }
+
+            slotsMeshFilters = GetComponentsInChildren<MeshFilter>();
+            SetLetters(letters.ToCharArray(0, 6));
         }
 
-
-        public void SetLetters(string[] letters)
+        public void SetLetters(char[] letters)
         {
-
-        }
-
-        public void SetLetter(char[] letters)
-        {
-
+            for (int i = 0; i < slotsMeshFilters.Length; i++)
+            {
+                slotsMeshFilters[i].mesh = lettersMeshDict[letters[i]];
+            }
         }
     }
 }

@@ -46,7 +46,7 @@ public class GoblinThrashCanBehaviour : MonoBehaviour
             {
                 foreach (Collider collider in hitColliders)
                 {
-                    collider.GetComponent<HurtBox>().TakeDamage(2, gameObject, 30);
+                    collider.GetComponent<HurtBox>().TakeDamage(2, gameObject, 10);
                 }
             }
             yield return null;

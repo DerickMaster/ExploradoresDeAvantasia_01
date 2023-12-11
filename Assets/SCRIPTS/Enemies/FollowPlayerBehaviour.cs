@@ -49,12 +49,12 @@ public class FollowPlayerBehaviour : MonoBehaviour
         int id;
         try
         {
-            id = 1;
+            id = path.corners.Length-1;
+            if (id < 0) throw new System.IndexOutOfRangeException("path not calculated");
         }
         catch (System.IndexOutOfRangeException)
         {
-            Debug.Log("Couldnt find second corner, corners length:" + path.corners.Length.ToString());
-            id = 0;
+            return transform.position;
         }
         Vector3 movementDiretion = path.corners[id] - transform.position;
         movementDiretion.y = transform.position.y;

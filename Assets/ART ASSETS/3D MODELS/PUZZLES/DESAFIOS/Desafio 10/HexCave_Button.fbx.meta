@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: cde3098408ff95349acb1c61dcb24602
+guid: 8b8a60f9274449740810711693475826
 ModelImporter:
   serializedVersion: 20300
   internalIDToNameTable:
@@ -15,7 +15,12 @@ ModelImporter:
   - first:
       74: -6285081373747397163
     second: HexCave_StoneButtom|Unpressing
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_HexCave_Border
+    second: {fileID: 2100000, guid: 4ddc590353675504f873e17148249c40, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

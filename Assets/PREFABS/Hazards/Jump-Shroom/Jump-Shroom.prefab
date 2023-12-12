@@ -40,10 +40,10 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2340124799115967672}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4.5, y: 6, z: 4.5}
+  m_Size: {x: 2.25, y: 6, z: 2.25}
   m_Center: {x: 0, y: 3, z: 0}
 --- !u!114 &8105396193180372053
 MonoBehaviour:
@@ -206,6 +206,8 @@ GameObject:
   - component: {fileID: 5563511606169223723}
   - component: {fileID: 1302076183873971777}
   - component: {fileID: 1674513770}
+  - component: {fileID: 47464265}
+  - component: {fileID: 47464268}
   m_Layer: 0
   m_Name: Jump-Shroom
   m_TagString: Untagged
@@ -222,7 +224,7 @@ Transform:
   m_GameObject: {fileID: 5563511606169223722}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.81411934, y: -0.0000009536743, z: -3.0121775}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 4454591417063431210}
   - {fileID: 8551028069478696625}
@@ -272,7 +274,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 1.5
-  m_Speed: 8
+  m_Speed: 4
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -284,6 +286,80 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &47464265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5563511606169223722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fbf6a7c3ab204d42a562663d74a5b06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  singleStep: 3
+  maxMagnituteDelta: 1
+  acceptableAngle: 5
+  stepTime: 2
+  agent: {fileID: 0}
+  playerInRangeEvent:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &47464268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5563511606169223722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dcfa63a641e7ec41b5c9f1bc9fe049a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealthAmount: 2
+  curHealthAmount: 2
+  _myAnimator: {fileID: 0}
+  unitKilled:
+    m_PersistentCalls:
+      m_Calls: []
+  damagedMat: {fileID: 0}
+  detectionZone: {fileID: 1302076183873971777}
+  hitboxOrigin: {fileID: 3879483901261057376}
+  hitbox:
+    bounds: {x: 1.25, y: 0.5, z: 1.25}
+    offset: {x: 0, y: -0.2, z: 0}
+  lookDelay: 0.5
+  jumpSpeed: 20
+  maxDistance: 3
+  mask:
+    serializedVersion: 2
+    m_Bits: 257
 --- !u!1 &7011259737139738893
 GameObject:
   m_ObjectHideFlags: 0

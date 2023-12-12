@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace Challenge_10
@@ -20,32 +21,58 @@ namespace Challenge_10
         }
 
         [SerializeField] Case[] cases;
+        [SerializeField] string[] randomSyllabs;
+
+        Chl02ScreenBehaviour screen;
         HeavyButtonBehaviour[] buttons;
         Case curCase;
         int curPair;
+        string expectedSyllab;
 
         private void Start()
         {
+            screen = GetComponentInChildren<Chl02ScreenBehaviour>();
             buttons = GetComponentsInChildren<HeavyButtonBehaviour>();
+            foreach (HeavyButtonBehaviour buttonBehaviour in buttons)
+            {
+                buttonBehaviour.pressedEvent.AddListener(CheckSyllab);
+            }
+            SetCase(cases[0]);
         }
 
         private void SetCase(Case newCase)
         {
             curCase = newCase;
             curPair = 0;
-            SetMaterial(curCase.pairs[curPair].material);
+            SetPair();
         }
 
-        private void SetMaterial(Material mat)
+        private void SetPair()
         {
-            // set material on the screen
+            randomSyllabs = randomSyllabs.Shuffle().ToArray();
+            screen.SetExpectedWord(curCase.pairs[curPair].material, curCase.pairs[curPair].word);
+            expectedSyllab = curCase.pairs[curPair].word.Substring(2, 2);
+            RandomizeSyllabs();
+        }
+
+        private void RandomizeSyllabs()
+        {
+            int randId = Random.Range(0, buttons.Length);
+            for (int i = 0; i < buttons.Length; i++)
+            {
+                if (i == randId) buttons[i].SetText(expectedSyllab);
+                else buttons[i].SetText(randomSyllabs[i]);
+            }
         }
 
         private void CheckSyllab(string syllab)
         {
             if (syllab.Equals(curCase.pairs[curPair].word.Substring(2)))
             {
-                CheckNextPair();
+                screen.CompleteWord(curCase.pairs[curPair].word.Substring(2));
+                DeactivateButtons();
+
+                Invoke(nameof(CheckNextPair), 2f);
             }
         }
 
@@ -56,12 +83,20 @@ namespace Challenge_10
             {
                 Victory();
             }
-            else SetMaterial(curCase.pairs[curPair].material);
+            else SetPair();
         }
 
         private void Victory()
         {
+            DeactivateButtons();
+        }
 
+        private void DeactivateButtons()
+        {
+            foreach (HeavyButtonBehaviour buttonBehaviour in buttons)
+            {
+                buttonBehaviour.Deactivate();
+            }
         }
     }
 }

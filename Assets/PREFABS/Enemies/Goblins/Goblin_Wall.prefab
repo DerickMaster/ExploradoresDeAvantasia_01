@@ -352,6 +352,7 @@ GameObject:
   - component: {fileID: 3490923842370874783}
   - component: {fileID: 4267600527564830500}
   - component: {fileID: 1728250199}
+  - component: {fileID: -729316626206227844}
   m_Layer: 0
   m_Name: Goblin_Wall
   m_TagString: Untagged
@@ -407,12 +408,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4c116e7b03dc3e49a0d1d55bbd91ef7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasDectectionArea: 1
   centerOffset: {x: 0, y: 1.65, z: 0}
   distance: 1.4
   boxHalfExtends: {x: 0.8, y: 0.85, z: 1.4}
   playerLayer:
     serializedVersion: 2
     m_Bits: 256
+--- !u!114 &-729316626206227844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4267600527564830501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b37864dabbbccb34cb4c00d8129b343b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundEventList:
+  - Guid:
+      Data1: 1859994758
+      Data2: 1266086031
+      Data3: 616660364
+      Data4: 157039721
+    Path: event:/GENERAL/ENEMIES/Goblin_wall_attack_01
+  - Guid:
+      Data1: 470558529
+      Data2: 1154497041
+      Data3: 682488761
+      Data4: -1235295564
+    Path: event:/GENERAL/ENEMIES/Goblin_wall_attack_02
+  isRandom: 0
 --- !u!1 &4630101049368851416
 GameObject:
   m_ObjectHideFlags: 0

@@ -18,22 +18,28 @@ namespace Challenge_10
             render = GetComponentInChildren<SkinnedMeshRenderer>();
         }
 
-        public void SetExpectedWord(Material mat, string word)
+        public void SetExpectedWord(Material mat, string word, int initialId)
         {
             _animator.SetBool("Active", true);
             Material[] mats = render.materials;
             mats[1] = mat;
             render.materials = mats;
-
-            textMesh.text = word.Substring(0, 2);
-            textMesh.text += "_ _";
+            if(initialId == 0)
+            {
+                textMesh.text = "__" + word.Substring(2,2);
+            }
+            else
+            {
+                textMesh.text = word.Substring(0, 2) + "__";
+            }
+            
         }
 
-        public void CompleteWord(string syllab)
+        public void CompleteWord(string completeWord)
         {
             _animator.SetBool("Active", false);
-            textMesh.text = textMesh.text.Substring(0, 2);
-            textMesh.text += syllab;
+
+            textMesh.text = completeWord;
         }
     }
 

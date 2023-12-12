@@ -14,7 +14,6 @@ namespace Challenge_10
         private void Awake()
         {
             _animator = GetComponentInChildren<Animator>();
-            textMesh = GetComponentInChildren<TextMeshPro>();
             textMeshes = GetComponentsInChildren<TextMeshPro>();
             render = GetComponentInChildren<SkinnedMeshRenderer>();
         }

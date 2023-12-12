@@ -11,12 +11,14 @@ public class FollowPlayerBehaviour : MonoBehaviour
     [SerializeField] float maxMagnituteDelta;
     [SerializeField] float acceptableAngle;
     [SerializeField] float stepTime;
-    [SerializeField] NavMeshPath path;
+    [SerializeField] NavMeshAgent agent;
+    [SerializeField] bool selfStopping;
 
     float elapsedStep;
     CharacterManager charManager;
     GameObject playerRef;
-    public NavMeshAgent agent;
+    
+    NavMeshPath path;
 
     [HideInInspector] public UnityEvent playerInRangeEvent;
 
@@ -66,8 +68,17 @@ public class FollowPlayerBehaviour : MonoBehaviour
 
     private void FollowPlayer()
     {
-        elapsedStep += Time.deltaTime;
         playerRef = charManager.GetCurrentCharacter();
+
+        if (agent.remainingDistance < agent.stoppingDistance && Vector3.Angle(transform.forward, playerRef.transform.position - transform.position) < acceptableAngle)
+        {
+            playerInRangeEvent.Invoke();
+            elapsedStep = 0f;
+            if (selfStopping) return;
+        }
+
+        elapsedStep += Time.deltaTime;
+        
         if (elapsedStep > stepTime)
         {
             elapsedStep = 0f;
@@ -82,11 +93,5 @@ public class FollowPlayerBehaviour : MonoBehaviour
         AdjustLookDirection(path);
 
         Debug.DrawRay(transform.position, playerRef.transform.position - transform.position,Color.blue);
-
-        if (agent.remainingDistance < agent.stoppingDistance && Vector3.Angle(transform.forward, playerRef.transform.position - transform.position) < acceptableAngle)
-        {
-            playerInRangeEvent.Invoke();
-            elapsedStep = 0f;
-        }
     }
 }

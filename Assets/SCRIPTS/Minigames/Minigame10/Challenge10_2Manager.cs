@@ -18,6 +18,7 @@ namespace Challenge_10
         struct Case
         {
             public WordImagePair[] pairs;
+            public bool missingEnd;
         }
 
         [SerializeField] Case[] cases;
@@ -37,7 +38,7 @@ namespace Challenge_10
             {
                 buttonBehaviour.pressedEvent.AddListener(CheckSyllab);
             }
-            SetCase(cases[0]);
+            SetCase(cases[Random.Range(0,cases.Length)]);
         }
 
         private void SetCase(Case newCase)
@@ -47,11 +48,18 @@ namespace Challenge_10
             SetPair();
         }
 
+        private int initialId;
         private void SetPair()
         {
             randomSyllabs = randomSyllabs.Shuffle().ToArray();
-            screen.SetExpectedWord(curCase.pairs[curPair].material, curCase.pairs[curPair].word);
-            expectedSyllab = curCase.pairs[curPair].word.Substring(2, 2);
+
+            initialId = 0;
+            if (curCase.missingEnd)
+                initialId = 2;
+
+            screen.SetExpectedWord(curCase.pairs[curPair].material, curCase.pairs[curPair].word, initialId);
+
+            expectedSyllab = curCase.pairs[curPair].word.Substring(initialId, 2);
             RandomizeSyllabs();
         }
 
@@ -67,9 +75,9 @@ namespace Challenge_10
 
         private void CheckSyllab(string syllab)
         {
-            if (syllab.Equals(curCase.pairs[curPair].word.Substring(2)))
+            if (syllab.Equals(expectedSyllab))
             {
-                screen.CompleteWord(curCase.pairs[curPair].word.Substring(2));
+                screen.CompleteWord(curCase.pairs[curPair].word);
                 DeactivateButtons();
 
                 Invoke(nameof(CheckNextPair), 2f);

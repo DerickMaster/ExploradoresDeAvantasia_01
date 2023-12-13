@@ -2581,6 +2581,16 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: SpecialConfSelector, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 4345822225506059651, guid: de88c13276bebbd41bf69f6ddbdc3338,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462832097983005764, guid: de88c13276bebbd41bf69f6ddbdc3338,
+        type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4942851819529249112, guid: de88c13276bebbd41bf69f6ddbdc3338,
         type: 3}
       propertyPath: _specialConfs
@@ -2699,7 +2709,7 @@ PrefabInstance:
     - target: {fileID: 4942851819670784872, guid: de88c13276bebbd41bf69f6ddbdc3338,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4942851819990283545, guid: de88c13276bebbd41bf69f6ddbdc3338,
         type: 3}
@@ -2749,7 +2759,7 @@ PrefabInstance:
     - target: {fileID: 4942851820170747908, guid: de88c13276bebbd41bf69f6ddbdc3338,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4942851820189894104, guid: de88c13276bebbd41bf69f6ddbdc3338,
         type: 3}
@@ -2765,6 +2775,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -0.02130127
+      objectReference: {fileID: 0}
+    - target: {fileID: 4942851820565041334, guid: de88c13276bebbd41bf69f6ddbdc3338,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5123091256462270908, guid: de88c13276bebbd41bf69f6ddbdc3338,
         type: 3}

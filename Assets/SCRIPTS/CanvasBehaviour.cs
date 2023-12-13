@@ -40,6 +40,7 @@ public class CanvasBehaviour : MonoBehaviour
         }
 
         if (PlayerPrefs.GetInt("TextSpeed") != 1) ExtremeDialogueSpeed();
+        if (PlayerPrefs.GetInt("TouchMove") == 1) 
 
         Time.timeScale = 1f;
         if (m_type == DeviceType.Handheld) _uiMobileManager.gameObject.SetActive(true);
@@ -169,6 +170,12 @@ public class CanvasBehaviour : MonoBehaviour
         }
         if (curText == texts.Length) TempText.SetActive(false);
         else SetActiveTempText(texts, activeTime, curText);
+    }
+
+    [SerializeField] GameObject _touchMoveObj;
+    private void EnableTouchMove()
+    {
+        _touchMoveObj.SetActive(true);
     }
 
     private void UpdateInput()

@@ -8,13 +8,13 @@ namespace Challenge_10
     public class Chl02ScreenBehaviour : MonoBehaviour
     {
         Animator _animator;
-        TextMeshPro textMesh;
+        TextMeshPro[] textMeshes;
         SkinnedMeshRenderer render;
 
         private void Awake()
         {
             _animator = GetComponentInChildren<Animator>();
-            textMesh = GetComponentInChildren<TextMeshPro>();
+            textMeshes = GetComponentsInChildren<TextMeshPro>();
             render = GetComponentInChildren<SkinnedMeshRenderer>();
         }
 
@@ -26,11 +26,13 @@ namespace Challenge_10
             render.materials = mats;
             if(initialId == 0)
             {
-                textMesh.text = "__" + word.Substring(2,2);
+                textMeshes[0].text = "__";
+                textMeshes[1].text = word.Substring(2, 2);
             }
             else
             {
-                textMesh.text = word.Substring(0, 2) + "__";
+                textMeshes[0].text = word.Substring(0, 2);
+                textMeshes[1].text = "__";
             }
             
         }
@@ -39,7 +41,8 @@ namespace Challenge_10
         {
             _animator.SetBool("Active", false);
 
-            textMesh.text = completeWord;
+            textMeshes[0].text = completeWord.Substring(0, 2);
+            textMeshes[1].text = completeWord.Substring(2, 2);
         }
     }
 

@@ -15,6 +15,7 @@ public class Adventure4BossManager : MonoBehaviour
     [SerializeField] private int expectedCount;
 
     [SerializeField] GameObject bossFightCamera;
+    [SerializeField] Animator _helpPress;
 
 
     private void Start()
@@ -71,6 +72,7 @@ public class Adventure4BossManager : MonoBehaviour
     public PlayableDirector _bossVictoryCin;
     private void PuzzleCompleted() 
     {
+        _helpPress.SetBool("Active", true);
         bossFightCamera.SetActive(false);
         _bossVictoryCin.Play();
     }

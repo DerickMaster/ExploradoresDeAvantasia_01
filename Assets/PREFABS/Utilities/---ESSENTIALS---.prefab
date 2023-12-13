@@ -629,6 +629,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 3590401109030396005}
     - target: {fileID: 878237081, guid: e814b6ba789f1c445af170ba23c1dfd0, type: 3}
+      propertyPath: _touchMoveObj
+      value: 
+      objectReference: {fileID: 3567764810904966605}
+    - target: {fileID: 878237081, guid: e814b6ba789f1c445af170ba23c1dfd0, type: 3}
       propertyPath: _uiMobileManager
       value: 
       objectReference: {fileID: 976036384136073782}
@@ -665,6 +669,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2714407865037488095, guid: e814b6ba789f1c445af170ba23c1dfd0,
+        type: 3}
+      propertyPath: m_Name
+      value: MoveScreenTouch
       objectReference: {fileID: 0}
     - target: {fileID: 2714407865037488095, guid: e814b6ba789f1c445af170ba23c1dfd0,
         type: 3}
@@ -983,6 +992,12 @@ PrefabInstance:
       objectReference: {fileID: 1038785319637058679}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e814b6ba789f1c445af170ba23c1dfd0, type: 3}
+--- !u!1 &1212149046683456190 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 358836072355051692, guid: e814b6ba789f1c445af170ba23c1dfd0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1452618288347802130}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &2238484056378129686 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 808411254233224964, guid: e814b6ba789f1c445af170ba23c1dfd0,
@@ -1034,6 +1049,12 @@ MonoBehaviour:
 --- !u!224 &1452618289523830195 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1517897633, guid: e814b6ba789f1c445af170ba23c1dfd0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1452618288347802130}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3567764810904966605 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2714407865037488095, guid: e814b6ba789f1c445af170ba23c1dfd0,
     type: 3}
   m_PrefabInstance: {fileID: 1452618288347802130}
   m_PrefabAsset: {fileID: 0}
@@ -1109,12 +1130,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37864dabbbccb34cb4c00d8129b343b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1212149046683456190 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 358836072355051692, guid: e814b6ba789f1c445af170ba23c1dfd0,
-    type: 3}
-  m_PrefabInstance: {fileID: 1452618288347802130}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &6660954655917571965
 MonoBehaviour:
   m_ObjectHideFlags: 0

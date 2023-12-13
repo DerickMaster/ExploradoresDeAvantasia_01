@@ -40,7 +40,7 @@ public class CanvasBehaviour : MonoBehaviour
         }
 
         if (PlayerPrefs.GetInt("TextSpeed") != 1) ExtremeDialogueSpeed();
-        if (PlayerPrefs.GetInt("TouchMove") == 1) 
+        if (PlayerPrefs.GetInt("TouchMove") == 1) EnableTouchMove();
 
         Time.timeScale = 1f;
         if (m_type == DeviceType.Handheld) _uiMobileManager.gameObject.SetActive(true);

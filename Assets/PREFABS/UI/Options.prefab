@@ -2010,6 +2010,7 @@ GameObject:
   - component: {fileID: 4942851820211748551}
   - component: {fileID: 4942851820211748545}
   - component: {fileID: 4942851820211748544}
+  - component: {fileID: 8910911584829837566}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -2064,7 +2065,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3e5a494a85989b340b93c785ba2843c4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 438706aadccb3ac4ab3042e9add493ab, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2162,6 +2163,20 @@ MonoBehaviour:
       Data4: -170146712
     Path: event:/GENERAL/CORE/Button_confirm
   isRandom: 0
+--- !u!114 &8910911584829837566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4942851820211748549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dec97ccf3d6d00d42884576d68a7c44a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _normalSprite: {fileID: 21300000, guid: 438706aadccb3ac4ab3042e9add493ab, type: 3}
+  _pressedSprite: {fileID: 21300000, guid: 221c63a65bca3b24a8bd1b5e5bcb6a84, type: 3}
 --- !u!1 &4942851820412181491
 GameObject:
   m_ObjectHideFlags: 0

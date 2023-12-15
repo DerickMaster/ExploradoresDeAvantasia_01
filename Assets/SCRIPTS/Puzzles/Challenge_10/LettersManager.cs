@@ -68,19 +68,22 @@ namespace Challenge_10
 
         private void SetLetterInCubes()
         {
-            string copy = letters;
-
-            copy = new string(copy.Shuffle().ToArray());
+            char[] copy = letters.Shuffle().ToArray();
+            string correctLetter = letters.Substring(randomIds[curRandomId], 1);
             int rngId = Random.Range(0, letterCubes.Length);
 
             for (int i = 0; i < letterCubes.Length; i++)
             {
                 if(i == rngId)
+                    letterCubes[i].UpdateChar(correctLetter, lettersMeshDict[correctLetter[0]], true);
+                else
                 {
-                    string str = letters.Substring(randomIds[curRandomId], 1);
-                    letterCubes[i].UpdateChar(str, lettersMeshDict[str[0]], true);
+                    string letter = copy[i].ToString();
+
+                    if (letter.Equals(correctLetter)) i++;
+
+                    letterCubes[i].UpdateChar(copy[i].ToString(), lettersMeshDict[copy[i]], false);
                 }
-                else letterCubes[i].UpdateChar(copy.Substring(i, 1), lettersMeshDict[copy[i]], false);
             }
         }
 

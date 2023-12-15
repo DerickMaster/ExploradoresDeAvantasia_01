@@ -71,6 +71,7 @@ namespace Challenge_10
             char[] copy = letters.Shuffle().ToArray();
             string correctLetter = letters.Substring(randomIds[curRandomId], 1);
             int rngId = Random.Range(0, letterCubes.Length);
+            int mod = 0;
 
             for (int i = 0; i < letterCubes.Length; i++)
             {
@@ -78,11 +79,11 @@ namespace Challenge_10
                     letterCubes[i].UpdateChar(correctLetter, lettersMeshDict[correctLetter[0]], true);
                 else
                 {
-                    string letter = copy[i].ToString();
+                    char letter = copy[i];
 
-                    if (letter.Equals(correctLetter)) i++;
+                    if (letter.Equals(correctLetter)) mod = 1;
 
-                    letterCubes[i].UpdateChar(copy[i].ToString(), lettersMeshDict[copy[i]], false);
+                    letterCubes[i].UpdateChar(copy[i + mod].ToString(), lettersMeshDict[copy[i + mod]], false);
                 }
             }
         }

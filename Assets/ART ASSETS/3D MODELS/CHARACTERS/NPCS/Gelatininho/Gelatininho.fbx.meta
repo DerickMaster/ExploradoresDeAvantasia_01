@@ -1,44 +1,20 @@
 fileFormatVersion: 2
-guid: 0ae091c3ae2394849ab886264c60b09e
+guid: 62de080afa3a48b44a7a469da925c675
 ModelImporter:
   serializedVersion: 20300
   internalIDToNameTable:
   - first:
-      74: 5109861902567033855
-    second: WarningRoundArea|Activated
+      74: 440256237477457726
+    second: Gelatinin|Gathered
   - first:
-      74: -330341814330744071
-    second: WarningRoundArea|Activated_Empty
-  - first:
-      74: -6455836335172095814
-    second: WarningRoundArea|Activated_Full
-  - first:
-      74: -2626514872470563820
-    second: WarningRoundArea|OFF
-  - first:
-      74: -1051710056046145766
-    second: WarningRoundArea|ON
+      74: -4239599730062109624
+    second: Gelatinin|Idle
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: M_LessWarningArea.003
-    second: {fileID: 2100000, guid: b2064e591a7c35d43b926da52777b7cc, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: M_WarningArea.003
-    second: {fileID: 2100000, guid: 807128cd3ed4c984493b2cdc6d7b565b, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: M_WarningSymbol
-    second: {fileID: 2100000, guid: a792a30e0702bec4e89b7c97e6cb7376, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material.001
-    second: {fileID: 2100000, guid: 63d7158d658ba61449bca9041967bccd, type: 2}
+      name: M_GelatinousSmall
+    second: {fileID: 2100000, guid: 84d535e43e4b67543a2295e36103bd0a, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -65,7 +41,65 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Gelatinin|Gathered
+      takeName: Gelatinin|Gathered
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Gelatinin|Idle
+      takeName: Gelatinin|Idle
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 0
   meshes:
     lODScreenPercentages: []

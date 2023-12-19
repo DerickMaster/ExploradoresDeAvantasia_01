@@ -1,14 +1,24 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.EventSystems;
 
-public class TouchMove : MonoBehaviour, IPointerClickHandler
+public class TouchMove : MonoBehaviour, IPointerClickHandler,IPointerDownHandler,IPointerUpHandler,IDragHandler
 {
     private Coroutine movementCoroutine;
     [SerializeField] LayerMask groundMask;
     StarterAssets.StarterAssetsInputs _charInput;
+    Vector2 curScreenPosition;
+    bool holding = false;
+
+    private void Update()
+    {
+        _charInput = CharacterManager.Instance.GetCurrentCharacter().GetComponent<StarterAssets.StarterAssetsInputs>();
+    }
+
     public void OnPointerClick(PointerEventData eventData)
     {
+        /*
         RaycastHit hit;
         Vector3 pos = new Vector3(eventData.pointerCurrentRaycast.screenPosition.x, eventData.pointerCurrentRaycast.screenPosition.y, 10f);
         Vector3 direction =  Camera.main.ScreenToWorldPoint(pos) - Camera.main.transform.position;
@@ -35,5 +45,36 @@ public class TouchMove : MonoBehaviour, IPointerClickHandler
 
             _charInput.move = Vector2.zero;
         }
+         */
+    }
+
+    public void OnPointerDown(PointerEventData eventData)
+    {
+        holding = true;
+        curScreenPosition = eventData.pointerCurrentRaycast.screenPosition;
+        StartCoroutine(MoveCharacter());
+    }
+
+    IEnumerator MoveCharacter()
+    {
+        Vector2 screenCenter = new Vector3(Screen.width / 2, Screen.height / 2);
+        Vector2 direction;
+        while (holding)
+        {
+            direction =  curScreenPosition - screenCenter;
+            _charInput.move = direction.normalized;
+            yield return null;
+        }
+    }
+
+    public void OnPointerUp(PointerEventData eventData)
+    {
+        holding = false;
+        _charInput.move = Vector2.zero;
+    }
+
+    public void OnDrag(PointerEventData eventData)
+    {
+        curScreenPosition = eventData.pointerCurrentRaycast.screenPosition;
     }
 }

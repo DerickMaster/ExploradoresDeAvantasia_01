@@ -103,9 +103,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_HealthUnit: {fileID: 0}
-  isOpen: 1
+  canSwitch: 1
   m_InvencibilityTime: 0
+  snowmanPrefab: {fileID: 0}
   hitTaken:
+    m_PersistentCalls:
+      m_Calls: []
+  stopAllActions:
+    m_PersistentCalls:
+      m_Calls: []
+  blockSwitch:
     m_PersistentCalls:
       m_Calls: []
   _damageMaterial: {fileID: 0}
@@ -221,7 +228,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -876546973899608171, guid: 5c1102538f645c349ba768be7506a09e, type: 3}
+  - {fileID: 2100000, guid: 94f6c4655ecb5094d85718bb7319e364, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -329,6 +336,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3319840191180356073}
+  - component: {fileID: 6619366600584065807}
   m_Layer: 0
   m_Name: wall
   m_TagString: Untagged
@@ -350,3 +358,16 @@ Transform:
   m_Father: {fileID: 7270391317456006148}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &6619366600584065807
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8636017554519057546}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.006315166, y: 0.020897713, z: 0.02144652}
+  m_Center: {x: 0.000039199, y: 0.010544907, z: 0.0008624098}

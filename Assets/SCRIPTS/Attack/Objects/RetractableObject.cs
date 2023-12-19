@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class RetractableObject : EnemyBehaviour
@@ -20,13 +19,13 @@ public class RetractableObject : EnemyBehaviour
     [SerializeField] Collider _myCollider;
     public void ActivateCollider()
     {
-        _myAnimator.SetTrigger("Deactivate");
+        _myAnimator.SetBool("Active", false);
         _myCollider.enabled = true;
     }
 
     public void DeactivateCollider()
     {
-        _myAnimator.SetTrigger("Activate");
+        _myAnimator.SetBool("Active", true);
         _myCollider.enabled = false;
     }
 }

@@ -40,6 +40,7 @@ public class CanvasBehaviour : MonoBehaviour
         }
 
         if (PlayerPrefs.GetInt("TextSpeed") != 1) ExtremeDialogueSpeed();
+        if (PlayerPrefs.GetInt("TouchMove") == 1) EnableTouchMove();
 
         Time.timeScale = 1f;
         if (m_type == DeviceType.Handheld) _uiMobileManager.gameObject.SetActive(true);
@@ -100,6 +101,7 @@ public class CanvasBehaviour : MonoBehaviour
     public void SetActivePlayerUI(bool active)
     {
         PlayerUI.SetActive(active);
+        if (PlayerPrefs.GetInt("TouchMove") == 1) _touchMoveObj.SetActive(active);
     }
 
     private Coroutine countDown;
@@ -169,6 +171,12 @@ public class CanvasBehaviour : MonoBehaviour
         }
         if (curText == texts.Length) TempText.SetActive(false);
         else SetActiveTempText(texts, activeTime, curText);
+    }
+
+    [SerializeField] GameObject _touchMoveObj;
+    private void EnableTouchMove()
+    {
+        _touchMoveObj.SetActive(true);
     }
 
     private void UpdateInput()

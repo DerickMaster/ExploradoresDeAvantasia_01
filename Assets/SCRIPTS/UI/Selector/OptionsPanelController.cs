@@ -17,6 +17,9 @@ public class OptionsPanelController : MonoBehaviour
         _masterVolumeSlider.onValueChanged.AddListener(delegate { MasterSliderValueChange(); });
 
         ChangeGameQuality(QualitySettings.GetQualityLevel());
+
+        if (PlayerPrefs.GetInt("TouchMove") != 1) _touchMove = false;
+        else { _touchMove = true; _touchMoveButtonSprite.sprite = _images[1]; }
     }
 
     public void ShowOptionsScreen(bool open)
@@ -56,6 +59,25 @@ public class OptionsPanelController : MonoBehaviour
     {
         if (open) _returnToLoginPanel.SetActive(true);
         else _returnToLoginPanel.SetActive(false);
+    }
+
+    [SerializeField] Image _touchMoveButtonSprite;
+    [SerializeField] Sprite[] _images;
+    bool _touchMove = false;
+    public void ChangeToTouchMove()
+    {
+        if (!_touchMove)
+        {
+            PlayerPrefs.SetInt("TouchMove", 1);
+            _touchMoveButtonSprite.sprite = _images[1];
+            _touchMove = true;
+        }
+        else
+        {
+            PlayerPrefs.SetInt("TouchMove", 0);
+            _touchMoveButtonSprite.sprite = _images[0];
+            _touchMove = false;
+        }
     }
 
     public void ReturnToLoginScreen()

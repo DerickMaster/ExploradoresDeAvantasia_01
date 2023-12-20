@@ -330,35 +330,35 @@ MonoBehaviour:
     stageName: Desafio 05
     sceneSlug: des-05
     hasIntro: 0
-    hide: 0
+    hide: 1
     hasHardMode: 0
   - stageImage: {fileID: 21300000, guid: f4096f6c2dfe40845b9a3995473ca6fe, type: 3}
     sceneName: Desafio_06
     stageName: Desafio 06
     sceneSlug: des-06
     hasIntro: 0
-    hide: 0
+    hide: 1
     hasHardMode: 0
   - stageImage: {fileID: 21300000, guid: 398ba961e76fef346858b0c178dfd553, type: 3}
     sceneName: Desafio_07
     stageName: Desafio 07
     sceneSlug: des-07
     hasIntro: 0
-    hide: 0
+    hide: 1
     hasHardMode: 0
   - stageImage: {fileID: 21300000, guid: f80dfaccd23c17e45919ede4edf484f3, type: 3}
     sceneName: Desafio_08
     stageName: Desafio 08
     sceneSlug: des-08
     hasIntro: 0
-    hide: 0
+    hide: 1
     hasHardMode: 0
   - stageImage: {fileID: 21300000, guid: f3c9dd36c1e686447aee2043faa38c78, type: 3}
     sceneName: Desafio_09
     stageName: Desafio 09
     sceneSlug: des-09
     hasIntro: 0
-    hide: 0
+    hide: 1
     hasHardMode: 0
   categoryClicked:
     m_PersistentCalls:
@@ -902,28 +902,28 @@ MonoBehaviour:
     stageName: Aventura 1
     sceneSlug: adv-01
     hasIntro: 1
-    hide: 0
+    hide: 1
     hasHardMode: 0
   - stageImage: {fileID: 21300000, guid: fa1a0364cdc3c4b4e87c879dcb10e5a0, type: 3}
     sceneName: Aventura_02
     stageName: Aventura 2
     sceneSlug: 
     hasIntro: 0
-    hide: 0
+    hide: 1
     hasHardMode: 0
   - stageImage: {fileID: 21300000, guid: 55e3b4c8bbd1f364383b4cd7703bf503, type: 3}
     sceneName: Aventura_03
     stageName: Aventura 3
     sceneSlug: 
     hasIntro: 0
-    hide: 0
+    hide: 1
     hasHardMode: 0
   - stageImage: {fileID: 21300000, guid: 382aa4d4669189a40b7e31320b327eb3, type: 3}
     sceneName: Aventura_04
     stageName: Aventura 4
     sceneSlug: 
     hasIntro: 0
-    hide: 0
+    hide: 1
     hasHardMode: 0
   - stageImage: {fileID: 21300000, guid: 6e7e9f0f1d133f249b7e8055f69c59ca, type: 3}
     sceneName: Aventura_05
@@ -1839,28 +1839,28 @@ MonoBehaviour:
     stageName: Boss1
     sceneSlug: 
     hasIntro: 0
-    hide: 0
+    hide: 1
     hasHardMode: 0
   - stageImage: {fileID: 21300000, guid: a975715de311f7d4bb9bb7a7fe1e6c4a, type: 3}
     sceneName: Boss_02
     stageName: Boss2
     sceneSlug: 
     hasIntro: 0
-    hide: 0
+    hide: 1
     hasHardMode: 0
   - stageImage: {fileID: 21300000, guid: d6941f782dcc4de44ae19addd647ca5c, type: 3}
     sceneName: Boss_03
     stageName: Boss3
     sceneSlug: 
     hasIntro: 0
-    hide: 0
+    hide: 1
     hasHardMode: 0
   - stageImage: {fileID: 21300000, guid: d6941f782dcc4de44ae19addd647ca5c, type: 3}
     sceneName: Boss_04
     stageName: Boss4
     sceneSlug: 
     hasIntro: 0
-    hide: 0
+    hide: 1
     hasHardMode: 0
   categoryClicked:
     m_PersistentCalls:
@@ -2581,6 +2581,16 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: SpecialConfSelector, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 4345822225506059651, guid: de88c13276bebbd41bf69f6ddbdc3338,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462832097983005764, guid: de88c13276bebbd41bf69f6ddbdc3338,
+        type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4942851819529249112, guid: de88c13276bebbd41bf69f6ddbdc3338,
         type: 3}
       propertyPath: _specialConfs
@@ -2699,7 +2709,7 @@ PrefabInstance:
     - target: {fileID: 4942851819670784872, guid: de88c13276bebbd41bf69f6ddbdc3338,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4942851819990283545, guid: de88c13276bebbd41bf69f6ddbdc3338,
         type: 3}
@@ -2749,7 +2759,7 @@ PrefabInstance:
     - target: {fileID: 4942851820170747908, guid: de88c13276bebbd41bf69f6ddbdc3338,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4942851820189894104, guid: de88c13276bebbd41bf69f6ddbdc3338,
         type: 3}
@@ -2765,6 +2775,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -0.02130127
+      objectReference: {fileID: 0}
+    - target: {fileID: 4942851820565041334, guid: de88c13276bebbd41bf69f6ddbdc3338,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5123091256462270908, guid: de88c13276bebbd41bf69f6ddbdc3338,
         type: 3}

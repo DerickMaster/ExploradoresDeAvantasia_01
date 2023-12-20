@@ -101,6 +101,7 @@ public class CanvasBehaviour : MonoBehaviour
     public void SetActivePlayerUI(bool active)
     {
         PlayerUI.SetActive(active);
+        if (PlayerPrefs.GetInt("TouchMove") == 1) _touchMoveObj.SetActive(active);
     }
 
     private Coroutine countDown;

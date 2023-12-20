@@ -208,6 +208,7 @@ GameObject:
   - component: {fileID: 1674513770}
   - component: {fileID: 47464265}
   - component: {fileID: 47464268}
+  - component: {fileID: 5129633626796497914}
   m_Layer: 0
   m_Name: Jump-Shroom
   m_TagString: Untagged
@@ -327,6 +328,7 @@ MonoBehaviour:
   acceptableAngle: 5
   stepTime: 2
   agent: {fileID: 0}
+  selfStopping: 0
   playerInRangeEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -360,6 +362,38 @@ MonoBehaviour:
   mask:
     serializedVersion: 2
     m_Bits: 257
+--- !u!114 &5129633626796497914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5563511606169223722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b37864dabbbccb34cb4c00d8129b343b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundEventList:
+  - Guid:
+      Data1: 1147218012
+      Data2: 1301134880
+      Data3: -315805807
+      Data4: -618217148
+    Path: event:/GENERAL/ENEMIES/Jumpshroom_death
+  - Guid:
+      Data1: 1837783095
+      Data2: 1191697067
+      Data3: -1746455621
+      Data4: 344612841
+    Path: event:/GENERAL/ENEMIES/Jumpshroom_hit
+  - Guid:
+      Data1: -980477634
+      Data2: 1075711927
+      Data3: 754631103
+      Data4: -1762288417
+    Path: event:/GENERAL/ENEMIES/Jumpshroom_landing
+  isRandom: 0
 --- !u!1 &7011259737139738893
 GameObject:
   m_ObjectHideFlags: 0

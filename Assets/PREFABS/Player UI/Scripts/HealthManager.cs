@@ -6,13 +6,8 @@ public class HpModifiedEvent : UnityEvent<int>
 {}
 public class HealthManager : HealthUnit, IEndGame
 {
-    public HpModifiedEvent hpModified;
-
-    private void Awake()
-    {
-        hpModified = new HpModifiedEvent();
-        _endGameEvent = new UnityEvent<string>();
-    }
+    [HideInInspector] public HpModifiedEvent hpModified;
+    [HideInInspector] public UnityEvent<bool, float> _endGameEvent;
 
     public override void TakeDamage(int dmgAmount = 2)
     {
@@ -40,8 +35,7 @@ public class HealthManager : HealthUnit, IEndGame
         hpModified.Invoke(curHealthAmount);
     }
 
-    [HideInInspector] public UnityEvent<string> _endGameEvent;
-    public UnityEvent<string> GetEndGameEvent()
+    public UnityEvent<bool, float> GetEndGameEvent()
     {
         return _endGameEvent;
     }

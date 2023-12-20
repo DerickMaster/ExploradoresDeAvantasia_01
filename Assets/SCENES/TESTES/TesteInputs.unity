@@ -2645,7 +2645,12 @@ PrefabInstance:
     - target: {fileID: 4836295708077847669, guid: 8314c88bf8d12fa468882c6b347d5ab7,
         type: 3}
       propertyPath: singleStep
-      value: 1
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4836295708077847669, guid: 8314c88bf8d12fa468882c6b347d5ab7,
+        type: 3}
+      propertyPath: maxMagnituteDelta
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6072625295086033033, guid: 8314c88bf8d12fa468882c6b347d5ab7,
         type: 3}

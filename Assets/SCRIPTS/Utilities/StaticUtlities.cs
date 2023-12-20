@@ -1,11 +1,18 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEngine;
+using Random = System.Random;
 
 public static class StaticUtlities
 {
-    
+    public static bool RateLimiter(int _frequency)
+    {
+        if (Time.frameCount % _frequency == 0) return true;
+        else return false;
+    }
 }
+
 public static class EnumerableExtensions
 {
     public static IEnumerable<T> Shuffle<T>(this IEnumerable<T> source)

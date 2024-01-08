@@ -12,6 +12,7 @@ public class SimpleNPCInteraction : InteractableObject
 
     public override void Interact(InteractionController interactor)
     {
+        objInteractedEvent.Invoke();
         GetComponent<Animator>().Play("Talking");
         if (_interacted && _repeatDialog != null)
         {

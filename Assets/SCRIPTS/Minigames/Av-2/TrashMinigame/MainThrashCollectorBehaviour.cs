@@ -17,17 +17,12 @@ public class MainThrashCollectorBehaviour : MonoBehaviour, IMakeMistakes, IEndGa
     public int expectedThrashes;
 
     [HideInInspector] public UnityEvent<string, MistakeData> _wrongRobot;
+    [HideInInspector] public UnityEvent<bool,float> _endGameEvent;
     public string _puzzleName;
     public MistakeData _mistakeDescription;
 
-    private void Awake()
-    {
-        _endGameEvent = new UnityEvent<string>();
-    }
-
     private void Start()
     {
-
         m_animator = GetComponent<Animator>();
         curHealth = maxHealth;
 
@@ -81,18 +76,12 @@ public class MainThrashCollectorBehaviour : MonoBehaviour, IMakeMistakes, IEndGa
     private void Die()
     {
         GameLost.Invoke();
-        _endGameEvent.Invoke("WrongType");
+        _endGameEvent.Invoke(false, 3f);
     }
 
     public UnityEvent<string,MistakeData> GetMistakeEvent()
     {
         return _wrongRobot;
-    }
-
-    UnityEvent<string> _endGameEvent;
-    public UnityEvent<string> GetEndGameEvent()
-    {
-        return _endGameEvent;
     }
 
     private string GetColorById(int id)
@@ -110,5 +99,10 @@ public class MainThrashCollectorBehaviour : MonoBehaviour, IMakeMistakes, IEndGa
             default:
                 return "Erro";
         }
+    }
+
+    public UnityEvent<bool, float> GetEndGameEvent()
+    {
+        return _endGameEvent;
     }
 }

@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Playables;
 
-public class Minigame04Manager : MonoBehaviour, IEndgame, IMakeMistakes
+public class Minigame04Manager : MonoBehaviour, IEndGame, IMakeMistakes
 {
     [System.Serializable]
     private struct PuzzleCombination
@@ -25,14 +25,9 @@ public class Minigame04Manager : MonoBehaviour, IEndgame, IMakeMistakes
 
     [SerializeField] string[] names_Combinations;
     Dictionary<int, List<PuzzleCombination>> combinations; 
-    [HideInInspector] UnityEvent gameEndEvent;
+    [HideInInspector] public UnityEvent<bool, float> gameEndEvent;
     [HideInInspector] public UnityEvent<string, MistakeData> mistakeMadeEvent;
 
-
-    private void Awake()
-    {
-        gameEndEvent = new UnityEvent();
-    }
 
     private void Start()
     {
@@ -194,13 +189,13 @@ public class Minigame04Manager : MonoBehaviour, IEndgame, IMakeMistakes
         //gameEndEvent.Invoke();
     }
 
-    public UnityEvent GetEvent()
-    {
-        return gameEndEvent;
-    }
-
     public UnityEvent<string, MistakeData> GetMistakeEvent()
     {
         return mistakeMadeEvent;
+    }
+
+    public UnityEvent<bool, float> GetEndGameEvent()
+    {
+        return gameEndEvent;
     }
 }

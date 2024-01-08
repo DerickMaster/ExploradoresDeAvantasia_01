@@ -70,7 +70,7 @@ public class FollowPlayerBehaviour : MonoBehaviour
     {
         playerRef = charManager.GetCurrentCharacter();
 
-        if (agent.remainingDistance < agent.stoppingDistance && Vector3.Angle(transform.forward, playerRef.transform.position - transform.position) < acceptableAngle)
+        if (StaticUtlities.RateLimiter(30) && Vector3.Distance(transform.position, CharacterManager.Instance.GetCurrentCharacter().transform.position) < agent.stoppingDistance && Vector3.Angle(transform.forward, playerRef.transform.position - transform.position) < acceptableAngle)
         {
             playerInRangeEvent.Invoke();
             elapsedStep = 0f;
@@ -79,7 +79,7 @@ public class FollowPlayerBehaviour : MonoBehaviour
 
         elapsedStep += Time.deltaTime;
         
-        if (elapsedStep > stepTime)
+        if (StaticUtlities.RateLimiter(30))
         {
             elapsedStep = 0f;
             agent.CalculatePath(playerRef.transform.position, path);

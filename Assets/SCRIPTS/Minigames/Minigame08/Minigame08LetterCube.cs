@@ -1,4 +1,4 @@
-using UnityEngine;
+ using UnityEngine;
 using UnityEngine.Events;
 using System.Collections;
 
@@ -62,13 +62,10 @@ public class Minigame08LetterCube : EnemyBehaviour
     {
         _myAnimator.SetBool("Active", false);
         m_HurtBox.SetOpenHurtbox(false);
-        //_currentVowelMesh.gameObject.SetActive(false);
     }
 
-    bool exploded = false;
     private void Explode()
     {
-        exploded = true;
         ExplosionBehaviour instance = Instantiate(explosion, transform.position, Quaternion.identity).GetComponent<ExplosionBehaviour>();
         instance.PlayExplosion(2, 5f);
     }

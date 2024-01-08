@@ -15,8 +15,6 @@ public class ThrashPuzzleManager : MonoBehaviour
 
     public GameObject[] thrashPrefab;
 
-    EndgameScreenActivator _endgameCanvas;
-
     private void Start()
     {
         rng = new System.Random();
@@ -29,8 +27,6 @@ public class ThrashPuzzleManager : MonoBehaviour
             Instantiate(thrashPrefab[bagsType[i]], slots[i].position, Quaternion.identity); 
         }
         MainThrashCollectorBehaviour main = GetComponentInChildren<MainThrashCollectorBehaviour>();
-
-        _endgameCanvas = FindObjectOfType<EndgameScreenActivator>();
 
         main.GameWon.AddListener(GameWon);
         main.GameLost.AddListener(GameLost);

@@ -75,10 +75,10 @@ public class GameManager : MonoBehaviour
     }
 
     private float savedTime = 0f;
-    private void GameOverTriggered(string typeOfGo)
+    private void GameOverTriggered(bool victory, float delay)
     {
         savedTime = _timer.ElapsedTime;
-        CanvasBehaviour.Instance.ActivateEndgameScreen(false, 3f);
+        CanvasBehaviour.Instance.ActivateEndgameScreen(victory, delay);
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
